@@ -1,297 +1,413 @@
 <%@LANGUAGE="JAVASCRIPT"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simul�tor, MS, Kuju, update, upgrade">
-<title>MSTS Bin - galery</title>
-<link href="../main.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-<!--
-#Layer1 {
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:100%;
-	height:auto;
-	overflow:auto;
-	z-index:1;
-}
-body {
-	margin-left: 0px;
-	margin-top: 10px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
--->
-</style>
-</head>
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+  <html>
 
-<body>
-<div id="Layer1">
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simulátor, MS, Kuju, update, upgrade">
+
+    <title>MSTS Bin - galery</title>
+    <link href="../main.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      <!--
+      #Layer1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        z-index: 1;
+      }
+
+      body {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+      -->
+    </style>
+  </head>
+
+  <body>
+    <div id="Layer1">
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="center" bgcolor='#002000'><p class="bodystyle"><span class="subtitle">Galerie - n�kolik obr�zk� a popis implementovan�ch funkc�</span></p></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#002000'>
+                  <p class="bodystyle"><span class="subtitle">Galerie - n�kolik obr�zk� a popis implementovan�ch
+                      funkc�</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle">Pokud bude dostatek web prostoru p�id�m i n�jak�
+                  krat�� video </td>
+              </tr>
+            </table>
+          </td>
         </tr>
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="center" bgcolor='#003000' class="bodystyle">Pokud bude dostatek web prostoru p�id�m i n�jak� krat�� video </td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr bgcolor='#002000'>
+                <td align="center" bgcolor='#002000' class="subtitle">Zm�na textur interi�ru kabiny </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="justify">Jak v�t�ina v�, je interi�r kabiny ot�zkou n�kolika obr�zk�, kter� jsou
+                    zobrazov�ny na pop�ed� krajiny p�i v�hledu ven z kabiny. Doposud se zm�na zobrazen� interi�ru
+                    prov�d�la p�eps�n�m texturami, t�eba na no�n� textury, p�ed startem aktivity. Nov� �e�en� spo��v� v
+                    prohled�n� adres��e s CAB texturami a vyhled�n� no�n� textury. V �as kdy se m�n� textury (p�i z�padu
+                    a v�chodu slunce) se zm�n� cesty k textur�m a textury se znovu na�tou ani� byste museli t�eba jen
+                    mrknout. </div>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
-        <tr bgcolor='#002000'>
-          <td align="center" bgcolor='#002000' class="subtitle">Zm�na textur interi�ru kabiny </td>
-        </tr>
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">Jak v�t�ina v�, je interi�r kabiny ot�zkou n�kolika obr�zk�, kter� jsou zobrazov�ny na pop�ed� krajiny p�i v�hledu ven z kabiny. Doposud se zm�na zobrazen� interi�ru prov�d�la p�eps�n�m texturami, t�eba na no�n� textury, p�ed startem aktivity. Nov� �e�en� spo��v� v prohled�n� adres��e s CAB texturami a vyhled�n� no�n� textury. V �as kdy se m�n� textury (p�i z�padu a v�chodu slunce) se zm�n� cesty k textur�m a textury se znovu na�tou ani� byste museli t�eba jen mrknout. </div></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/cabday.jpg" width="350"
+                    height="263"></td>
+                <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/cabnight.jpg" width="350"
+                    height="263"></td>
+              </tr>
+            </table>
+          </td>
         </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/cabday.jpg" width="350" height="263"></td>
-          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/cabnight.jpg" width="350" height="263"></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="justify">No�n� textury jsou rovn� aktivov�ny p�i vjezdu do tunelu, jedinou podm�nkou
+                    spr�vn� funkce je, aby v tunelu byly pou�ity kolejov� objekty typu &quot;tun&quot;, ale to plat� i u
+                    nemodifikovan�ho MSTS (jinak budete m�t osv�tlen� vag�ny jako ve dne a nep�epne se v�m ani venkovn�
+                    kamera na kameru v kabin�). To je v�zva pro konstrukt�ry trat�. MSTS podle ni�eho jin�ho toti�
+                    nepozn�, �e jste v tunelu. Pokud pot�ebn� d�ly kolejiva nem�te, vytvo�te je kopi� pot�ebn�ho prvku a
+                    jeho p�ejmenov�n�m, sou�asn� by textura kolejov�ho podkladu m�la b�t upravena na tmav��, no�n�.
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">No�n� textury jsou rovn� aktivov�ny p�i vjezdu do tunelu, jedinou podm�nkou spr�vn� funkce je, aby v tunelu byly pou�ity kolejov� objekty typu &quot;tun&quot;, ale to plat� i u nemodifikovan�ho MSTS (jinak budete m�t osv�tlen� vag�ny jako ve dne a nep�epne se v�m ani venkovn� kamera na kameru v kabin�). To je v�zva pro konstrukt�ry trat�. MSTS podle ni�eho jin�ho toti� nepozn�, �e jste v tunelu. Pokud pot�ebn� d�ly kolejiva nem�te, vytvo�te je kopi� pot�ebn�ho prvku a jeho p�ejmenov�n�m, sou�asn� by textura kolejov�ho podkladu m�la b�t upravena na tmav��, no�n�. </div></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/tunday.jpg" width="350"
+                    height="263"></td>
+                <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/tunnight.jpg" width="350"
+                    height="263"></td>
+              </tr>
+            </table>
+          </td>
         </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+      </table>
+      <br>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/tunday.jpg" width="350" height="263"></td>
-          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/tunnight.jpg" width="350" height="263"></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#002000' class="subtitle">P�ep�n�n� p�edn� a zadn� kabiny </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="justify">Je zachov�no ale �e�eno jinak, aby bylo pou�iteln� i pro v�ov� lokomotivy </div>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="center" bgcolor='#002000' class="subtitle">P�ep�n�n� p�edn� a zadn� kabiny </td>
+          <td>
+            <table width="100%" border="0" align="center" cellpadding="2" cellspacing="5">
+              <tr>
+                <td align="center" bgcolor='#002000' class="subtitle"><img src="../images/aerial.jpg" width="720"></td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/front.jpg" width="720"></td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/back.jpg" width="720"></td>
+              </tr>
+            </table>
+          </td>
         </tr>
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">Je zachov�no ale �e�eno jinak, aby bylo pou�iteln� i pro v�ov� lokomotivy </div></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#002000' class="subtitle">Uk�zka video </td>
+              </tr>
+              <tr>
+                <td align="justify" bgcolor='#003000' class="bodystyle">
+                  <div align="center"><a href="../data/tunnel.avi" target="_blank">Tunnel uk�zka p��mo ze hry
+                      &quot;Northeast Corridor - Acela Express<br>
+                      xVid avi 320x240 - 600k </a></div>
+                </td>
+              </tr>
+              <tr>
+                <td align="justify" bgcolor='#003000' class="bodystyle">
+                  <div align="center"><a href="../data/cabs.avi" target="_blank">Kabiny uk�zka p��mo ze hry
+                      &quot;Northeast Corridor - CD 130.040&quot; p�ip�a�en� loco <br>
+                      xVid avi 320x240 - 1.4M </a></div>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" align="center" cellpadding="2" cellspacing="5">
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="center" bgcolor='#002000' class="subtitle"><img src="../images/aerial.jpg" width="720"></td>
-        </tr>
-        <tr>
-          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/front.jpg" width="720"></td>
-        </tr>
-        <tr>
-          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/back.jpg" width="720"></td>
-        </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
-        <tr>
-          <td align="center" bgcolor='#002000' class="subtitle">Uk�zka video </td>
-        </tr>
-        <tr>
-          <td align="justify" bgcolor='#003000' class="bodystyle"><div align="center"><a href="../data/tunnel.avi" target="_blank">Tunnel uk�zka p��mo ze hry &quot;Northeast Corridor - Acela Express<br>
-            xVid avi 320x240 - 600k </a></div></td>
-        </tr>
-        <tr>
-          <td align="justify" bgcolor='#003000' class="bodystyle"><div align="center"><a href="../data/cabs.avi" target="_blank">Kabiny uk�zka p��mo ze hry &quot;Northeast Corridor - CD 130.040&quot; p�ip�a�en� loco <br>
-            xVid avi 320x240 - 1.4M </a></div></td>
-        </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
-        <tr>
-          <td align="center" bgcolor='#002000' class="subtitle">Nov� ovl�d�n� p�ep�n�n� lokomotiv z &quot;Train Operations&quot; panelu </td>
-        </tr>
-        <tr>
-          <td align="justify" bgcolor='#003000' class="bodystyle"><div align="center"><a href="../data/tunnel.avi" target="_blank"></a>nov� ikony pro jednotliv� typy lokomotiv a vag�n�<br>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#002000' class="subtitle">Nov� ovl�d�n� p�ep�n�n� lokomotiv z &quot;Train
+                  Operations&quot; panelu </td>
+              </tr>
+              <tr>
+                <td align="justify" bgcolor='#003000' class="bodystyle">
+                  <div align="center"><a href="../data/tunnel.avi" target="_blank"></a>nov� ikony pro jednotliv� typy
+                    lokomotiv a vag�n�<br>
                     <img src="../images/steem.jpg"> <br>
                     <br>
                     <img src="../images/diesel.gif" width="640" height="480"><br>
                     <br>
-                    <img src="../images/mixed.jpg" width="637" height="478"></div></td>
-        </tr>
-        <tr>
-          <td align="justify" bgcolor='#003000' class="bodystyle"><div align="center"><br>
-            P�ep�n�n� do vag�n� s r�zn�mi interi�ry <br>
-            <br>
-            <img src="../images/scrgrb1.jpg" width="350">&nbsp;&nbsp;<img src="../images/scrgrb2.jpg" width="350"></div></td>
-        </tr>
-        <tr>
-          <td align="justify" bgcolor='#003000' class="bodystyle"><div align="center"><img src="../images/scrgrb3.jpg" width="350">&nbsp;&nbsp;<img src="../images/scrgrb4.jpg" width="350"></div></td>
-        </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
-        <tr>
-          <td align="center" bgcolor='#002000' class="subtitle">�pravy kamer </td>
-        </tr>
-        <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="center">S tracking kamerou m��ete odjet a� na 500m<br>
+                    <img src="../images/mixed.jpg" width="637" height="478">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="justify" bgcolor='#003000' class="bodystyle">
+                  <div align="center"><br>
+                    P�ep�n�n� do vag�n� s r�zn�mi interi�ry <br>
                     <br>
-                    <img src="../images/camera.jpg" width="500"></div></td>
+                    <img src="../images/scrgrb1.jpg" width="350">&nbsp;&nbsp;<img src="../images/scrgrb2.jpg"
+                      width="350">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="justify" bgcolor='#003000' class="bodystyle">
+                  <div align="center"><img src="../images/scrgrb3.jpg" width="350">&nbsp;&nbsp;<img
+                      src="../images/scrgrb4.jpg" width="350"></div>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="center" bgcolor='#003000' class="subtitle">Roz���en� lad�c� funkce </td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#002000' class="subtitle">�pravy kamer </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="center">S tracking kamerou m��ete odjet a� na 500m<br>
+                    <br>
+                    <img src="../images/camera.jpg" width="500">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor='#003000' class="subtitle">Roz���en� lad�c� funkce </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/hud.gif" width="500"
+                    height="351"></td>
+              </tr>
+            </table>
+          </td>
         </tr>
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/hud.gif" width="500" height="351"></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#002000' class="subtitle">Nov� funkce v akci </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="center"><a href="../data/train2.avi" target="_blank">Uk�zka ze hry: &quot;Northeast
+                      Corridor - P�ipojen� lost konzistu<br>
+                      Xvid AVI 320x240 - 3.03MB </a><br>
+                    <br>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="center" bgcolor='#002000' class="subtitle">Nov� funkce v akci </td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#002000' class="subtitle">Nov� funkce v akci </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="center"><a href="../data/demo2.avi" target="_blank">Uk�zka ze hry: &quot;Innsbruck -
+                      zast�vka ve stanici <br>
+                      Xvid AVI 400x300 - 3.1MB </a><br>
+                    <br>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="center"><a href="../data/train2.avi" target="_blank">Uk�zka ze hry: &quot;Northeast Corridor - P�ipojen� lost konzistu<br>
-            Xvid AVI 320x240 - 3.03MB </a><br>
-            <br>
-          </div></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td colspan="2" align="center" bgcolor='#003000' class="bodystyle">Nez�visl� ovl�d�n� dve�� </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/doors1.jpg" width="350"></td>
+                <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/doors2.jpg" width="350"></td>
+              </tr>
+            </table>
+          </td>
         </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="center" bgcolor='#002000' class="subtitle">Nov� funkce v akci </td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle">M��ete si moci v noci rozsv�tit v kabin�</td>
+              </tr>
+              <tr>
+                <td bgcolor='#003000' class="bodystyle">
+                  <div align="center" class="bodystyle"><img src="../images/cablight.jpg" width="720" height="175">
+                  </div>
+                  <div align="center"></div>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="center"><a href="../data/demo2.avi" target="_blank">Uk�zka ze hry: &quot;Innsbruck - zast�vka ve stanici <br>
-            Xvid AVI 400x300 - 3.1MB </a><br>
-            <br>
-          </div></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle">Samostatn� sb�ra�e </td>
+              </tr>
+              <tr>
+                <td bgcolor='#003000' class="bodystyle">
+                  <div align="center" class="bodystyle"><img src="../images/pantho.jpg" width="720" height="180"></div>
+                  <div align="center"></div>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle"><a href="../data/pantho.avi"
+                    target="_blank">Video uk�zka<br>
+                    Xvid AVI 640x480 - 2.1MB</a><a href="../data/demo2.avi" target="_blank"> </a></td>
+              </tr>
+            </table>
+          </td>
         </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td colspan="2" align="center" bgcolor='#003000' class="bodystyle">Nez�visl� ovl�d�n� dve�� </td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle">Opraven� zvuky pro helper loko </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle"><a href="../data/helpr.avi">Video show <br>
+                    Xvid AVI 640x480 - 1.4MB</a> </td>
+              </tr>
+            </table>
+          </td>
         </tr>
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/doors1.jpg" width="350"></td>
-          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/doors2.jpg" width="350"></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td colspan="2" align="center" bgcolor='#003000' class="bodystyle">Indikace tra�ov� rychlosti </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/speed1a.jpg" width="350"
+                    height="244"></td>
+                <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/speed2a.jpg"></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center" bgcolor='#003000' class="bodystyle"><img src="../images/speed3.jpg"
+                    width="156" height="213"></td>
+              </tr>
+            </table>
+          </td>
         </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
-        <tr>
-          <td align="center" bgcolor='#003000' class="bodystyle">M��ete si moci v noci rozsv�tit v kabin�</td>
-        </tr>
-        <tr>
-          <td bgcolor='#003000' class="bodystyle"><div align="center" class="bodystyle"><img src="../images/cablight.jpg" width="720" height="175"></div>
-                <div align="center"></div></td>
-        </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
-        <tr>
-          <td align="center" bgcolor='#003000' class="bodystyle">Samostatn� sb�ra�e </td>
-        </tr>
-        <tr>
-          <td bgcolor='#003000' class="bodystyle"><div align="center" class="bodystyle"><img src="../images/pantho.jpg" width="720" height="180"></div>
-                <div align="center"></div></td>
-        </tr>
-        <tr>
-          <td align="center" bgcolor='#003000' class="bodystyle"><a href="../data/pantho.avi" target="_blank">Video uk�zka<br>
-            Xvid AVI 640x480 - 2.1MB</a><a href="../data/demo2.avi" target="_blank"> </a></td>
-        </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
-        <tr>
-          <td align="center" bgcolor='#003000' class="bodystyle">Opraven� zvuky pro  helper loko </td>
-        </tr>
-        <tr>
-          <td align="center" bgcolor='#003000' class="bodystyle"><a href="../data/helpr.avi">Video show <br>
-            Xvid AVI 640x480 - 1.4MB</a> </td>
-        </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
-          <tr>
-            <td colspan="2" align="center" bgcolor='#003000' class="bodystyle">Indikace tra�ov� rychlosti </td>
-          </tr>
-          <tr>
-            <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/speed1a.jpg" width="350" height="244"></td>
-            <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/speed2a.jpg"></td>
-          </tr>
-          <tr>
-            <td colspan="2" align="center" bgcolor='#003000' class="bodystyle"><img src="../images/speed3.jpg" width="156" height="213"></td>
-          </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-</div>
-</body>
-</html>
+      </table>
+      <br>
+    </div>
+  </body>
+
+  </html>

@@ -1,186 +1,298 @@
 <%@LANGUAGE="JAVASCRIPT"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simul�tor, MS, Kuju, update, upgrade">
-<title>MSTS Bin - main</title>
-<link href="../main.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-<!--
-#Layer1 {
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:100%;
-	height:500px;
-	overflow:auto;
-	z-index:1;
-}
-body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
-.style1 {color: #0099FF}
-.style3 {color: #FFFF00}
--->
-</style>
-</head>
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+  <html>
 
-<body>
-<div id="Layer1">
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simulátor, MS, Kuju, update, upgrade">
+
+    <title>MSTS Bin - main</title>
+    <link href="../main.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      <!--
+      #Layer1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 500px;
+        overflow: auto;
+        z-index: 1;
+      }
+
+      body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+
+      .style1 {
+        color: #0099FF
+      }
+
+      .style3 {
+        color: #FFFF00
+      }
+      -->
+    </style>
+  </head>
+
+  <body>
+    <div id="Layer1">
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td width="25" align="center" bgcolor='#002000' ><img src="../images/larrow.gif" width="20" height="25" border="0"></td>
-          <td align="center" bgcolor='#002000' ><span class="subtitle">Help+<br>
-          </span><span class="bodystyle">Je lep�� se 2x zeptat ne� zbyte�n� t�pat </span></td>
-          <td width="25" align="center" bgcolor='#002000' ><a href="help3.htm"><img src="../images/rarrow.gif" width="20" height="25" border="0"></a></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td width="25" align="center" bgcolor='#002000'><img src="../images/larrow.gif" width="20" height="25"
+                    border="0"></td>
+                <td align="center" bgcolor='#002000'><span class="subtitle">Help+<br>
+                  </span><span class="bodystyle">Je lep�� se 2x zeptat ne� zbyte�n� t�pat </span></td>
+                <td width="25" align="center" bgcolor='#002000'><a href="help3.htm"><img src="../images/rarrow.gif"
+                      width="20" height="25" border="0"></a></td>
+              </tr>
+            </table>
+          </td>
         </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td colspan="2" align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">P�ep�n�n� sv�tel </span></span></td>
-        </tr>
-        <tr>
-          <td colspan="2" align="left" bgcolor='#003000'><div align="justify" class="bodystyle"> Jak nastavit sv�tla abychom vyu�ili nov�ch vlastnost� MSTSBin? <br>
-          </div></td>
-        </tr>
-        <tr>
-          <td align="left" bgcolor='#003000'><div align="justify"><span class="bodystyle"><img src="../images/help0.jpg" width="300" height="309"></span></div></td>
-          <td align="left" bgcolor='#003000'><div align="justify"><span class="bodystyle">V prv� �ad� si mus�me nadefinovat, jak� sv�tla na lokomotiv� chceme a jak je chceme ovl�dat. Nejjednodu��� by bylo v�echna sv�tla ovl�dat z kabiny lokomotivy co� je nejbli��� realit�. P�es v�echnu snahu jsme v�ak omezeni po�tem ovl�dac�ch prvk� a tak vyu�ijeme n�kter� podm�nky pro ��zen� sv�tel za n�s. </span></div></td>
-        </tr>
-        <tr>
-          <td colspan="2" align="left" bgcolor='#003000' class="bodystyle"><div align="center">Nejprve si nakresl�me v�echna sv�tla, kter� chceme na lokomotiv� m�t.<br>
-                    <img src="../images/help3.jpg" width="600" height="252"> <br>
-          </div>
-                <br></td>
-        </tr>
-        <tr>
-          <td colspan="2" align="left" bgcolor='#003000' class="bodystyle">Sv�tla ve �lut�ch r�me�c�ch chceme m�t funk�n�, pokud lokomotivu ��d�me ze zadn�ho stanovi�t�. </td>
-        </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
-        <tr>
-          <td align="center" bgcolor='#002000'><span class="subtitle">Ovl�d�n� sv�tel </span></td>
-        </tr>
-        <tr>
-          <td align="left" bgcolor='#003000'><div align="justify"><span class="bodystyle"> Sv�tla v MSTS jsou ovl�d�na p�ep�na�em sv�tel, co� je 3 polohov� p�ep�na� s funkcemi<br>
-            &quot;vypnuto - tlumen� - pln�&quot; sv�tla. Mimo ovl�d�n� hr��e m� p�ep�na� je�t� stav 0, kdy sv�tla nejsou z�visl� na nastaven� p�ep�na�e. V definici sv�tel je to prvn� z podm�nek &quot;Headlight ()&quot; </span></div></td>
-        </tr>
-        <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">
-            <p>MSTSBin umo��uje navolit dal�� stav &quot;tlumen�+pln�&quot;. Norm�ln� bychom museli pro ob� polohy zvl᚝ nadefinovat sv�tla. Tato �prava n�m pom��e n�jakou tu definici u�et�it. <br>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td colspan="2" align="center" bgcolor='#002000'><span class="bodystyle"><span
+                      class="subtitle">P�ep�n�n� sv�tel </span></span></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="left" bgcolor='#003000'>
+                  <div align="justify" class="bodystyle"> Jak nastavit sv�tla abychom vyu�ili nov�ch vlastnost� MSTSBin?
                     <br>
-            </p>
-          </div></td>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000'>
+                  <div align="justify"><span class="bodystyle"><img src="../images/help0.jpg" width="300"
+                        height="309"></span></div>
+                </td>
+                <td align="left" bgcolor='#003000'>
+                  <div align="justify"><span class="bodystyle">V prv� �ad� si mus�me nadefinovat, jak� sv�tla na
+                      lokomotiv� chceme a jak je chceme ovl�dat. Nejjednodu��� by bylo v�echna sv�tla ovl�dat z kabiny
+                      lokomotivy co� je nejbli��� realit�. P�es v�echnu snahu jsme v�ak omezeni po�tem ovl�dac�ch prvk�
+                      a tak vyu�ijeme n�kter� podm�nky pro ��zen� sv�tel za n�s. </span></div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="center">Nejprve si nakresl�me v�echna sv�tla, kter� chceme na lokomotiv� m�t.<br>
+                    <img src="../images/help3.jpg" width="600" height="252"> <br>
+                  </div>
+                  <br>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" align="left" bgcolor='#003000' class="bodystyle">Sv�tla ve �lut�ch r�me�c�ch chceme m�t
+                  funk�n�, pokud lokomotivu ��d�me ze zadn�ho stanovi�t�. </td>
+              </tr>
+            </table>
+          </td>
         </tr>
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="center"><span class="subtitle">Tlumen� sv�tla </span><br>
-            Za�neme tlumen�mi sv�tly pro z�kladn� ovl�dan� stanovi�t� lokomotivy. Jak to ud�l�me pro druh� stanovi�t� si �ekneme pozd�ji. <br>
-          </div></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#002000'><span class="subtitle">Ovl�d�n� sv�tel </span></td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000'>
+                  <div align="justify"><span class="bodystyle"> Sv�tla v MSTS jsou ovl�d�na p�ep�na�em sv�tel, co� je 3
+                      polohov� p�ep�na� s funkcemi<br>
+                      &quot;vypnuto - tlumen� - pln�&quot; sv�tla. Mimo ovl�d�n� hr��e m� p�ep�na� je�t� stav 0, kdy
+                      sv�tla nejsou z�visl� na nastaven� p�ep�na�e. V definici sv�tel je to prvn� z podm�nek
+                      &quot;Headlight ()&quot; </span></div>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="justify">
+                    <p>MSTSBin umo��uje navolit dal�� stav &quot;tlumen�+pln�&quot;. Norm�ln� bychom museli pro ob�
+                      polohy zvl᚝ nadefinovat sv�tla. Tato �prava n�m pom��e n�jakou tu definici u�et�it. <br>
+                      <br>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="center"><span class="subtitle">Tlumen� sv�tla </span><br>
+                    Za�neme tlumen�mi sv�tly pro z�kladn� ovl�dan� stanovi�t� lokomotivy. Jak to ud�l�me pro druh�
+                    stanovi�t� si �ekneme pozd�ji. <br>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="center">&nbsp;<img src="../images/help4.jpg" width="600" height="252"></div>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="justify">Nadefinovali jsme sv�tla, kter� maj� b�t rozsv�cena p�i poloze p�ep�na�e
+                    &quot;tlumen�&quot;.<br>
+                    Sv�tla 1, 3, 5, 7, 11, 12 jsou &quot;<span class="style1">Type (0)</span>&quot; , to je simulovan�
+                    sv�tla, sv�tlo 9 je sv�teln� ku�el pro tlumen� sv�tla. M� nastaven men�� dosah ne� pln� sv�tlo a
+                    jeho sklon k zemi je v�t��.<br>
+                    Sv�tla 11 a 12 maj� sv�tit pouze p�i poloze p�ep�na�e &quot;tlumen�&quot; p�i�ad�me jim tedy
+                    podm�nku <span class="style1">Headlight (2)</span><br>
+                    Sv�tla 1, 3,
+                    5 a 7 maj� sv�tit v poloze &quot;tlumen�&quot; i &quot;pln�&quot;. Vyu�ijeme mo�nost� MSTSBin a
+                    p�i�ad�me jim podm�nku <span class="style1">Headlight (4) </span><br>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="center">&nbsp;<img src="../images/help4.jpg" width="600" height="252"></div></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Pln� sv�tla
+                    </span></span></td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000'>
+                  <div align="center" class="bodystyle">P�id�me sv�tla pro polohu p�ep�na�e &quot;pln�&quot; sv�tla <br>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000'>
+                  <div align="center" class="bodystyle"><img src="../images/help5.jpg" width="600" height="252"></div>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="justify">P�idali jsme sv�tla 11 a 12 na �elo lokomotivy, proto�e chceme aby sv�tla m�la
+                    vy��� jas ne� sv�tla tlumen�. Z�rove� jsme p�idali sv�teln� ku�el s v�t��m dosahem a men��m sklonem
+                    k ter�nu. <br>
+                    Jako dal�� sv�tla jsme p�idali �erven� koncov� sv�tla na konec lokomotivy. V�echna tato sv�tla se
+                    budou ovl�dat p�ep�na�em v poloze &quot;pln�&quot; a proto jim p�i�ad�me podm�nku <span
+                      class="style1">Headlight (3) </span></div>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">A nyn� dopln�me omezuj�c� podm�nky pro za�azen�
+                  lokomotivy do consistu. Omez�me t�m, aby n�kter� sv�tla nesv�tila pokud p�ed lokomotivou nebo za n�
+                  m�me p�ip�a�eny vag�ny. Logick� by bylo pou��t podm�nku &quot;Coupling ()&quot; ale tato podm�nka je
+                  podmi�uj�c�, tz., �e sv�tla sv�t�, pokud je na sp��hle dal�� v�z a ne opa�n�, co� by bylo
+                  vhodn�j��.<br>
+                  Sv�tl�m 1, 3, 9, 10, 11, 12, 13 a 14 p�i�ad�me podm�nku &quot;<span class="style1">Unit
+                    (2)</span>&quot; - sv�tla sv�t�, pokud je loko v �ele soupravy<br>
+                  Sv�tl�m 6 a 8 p�i�ad�me podm�nku &quot;<span class="style1">Unit (3)</span>&quot; - sv�tla sv�t� pokud
+                  je loko posledn� v souprav� (plat� i pokud jede solo !) </td>
+              </tr>
+            </table>
+          </td>
         </tr>
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">Nadefinovali jsme sv�tla, kter� maj� b�t rozsv�cena p�i poloze p�ep�na�e &quot;tlumen�&quot;.<br>
-            Sv�tla 1, 3, 5, 7, 11, 12 jsou &quot;<span class="style1">Type (0)</span>&quot; , to je simulovan� sv�tla, sv�tlo 9 je sv�teln� ku�el pro tlumen� sv�tla. M� nastaven men�� dosah ne� pln� sv�tlo a jeho sklon k zemi je v�t��.<br>
-            Sv�tla 11 a 12 maj� sv�tit pouze p�i poloze p�ep�na�e &quot;tlumen�&quot; p�i�ad�me jim tedy podm�nku <span class="style1">Headlight (2)</span><br>
-            Sv�tla 1, 3, 
-            5 a 7 maj� sv�tit v poloze &quot;tlumen�&quot; i &quot;pln�&quot;. Vyu�ijeme mo�nost� MSTSBin a p�i�ad�me jim podm�nku <span class="style1">Headlight (4) </span><br>
-          </div></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Sv�tla pro zadn�
+                      stanovi�t� </span></span></td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000'>
+                  <div align="justify" class="bodystyle">P�id�me sv�tla pro zadn� stanovi�t� (pro opa�n� sm�r pohybu
+                    lokomotivy). Aby MSTS poznal, �e ��d�me lokomotivu ze zadn�ho stanovi�t� a sm�r j�zdy se n�m zm�nil
+                    byly zavedeny nov� podm�nky Unit (4) a Unit (5). Unit (4) ��k�, �e lokomotiva z�st�v� st�le v �ele
+                    soupravy, je v�ak ��zena ze zadn�ho stanovi�t�. Odpov�d� Unit (2) pro p�edn� stanovi�t�. Unit (5)
+                    ��k�, �e lokomotiva je na konci soupravy (nebo solo) a je ��zena ze zadn�ho stanovi�t�. To odpov�d�
+                    Unit (3) pro p�edn� stanovi�t�. <br>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000'>
+                  <div align="center" class="bodystyle"><img src="../images/help3.jpg" width="600" height="252"></div>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="justify">P�idali jsme sv�tla 15, 16, 17, 18 na konec lokomotivy a sv�tla 2 a 4 na p�edek
+                    lokomotivy. <br>
+                    Sv�tla 17, 18, 2 a 4 se budou ovl�dat p�ep�na�em v poloze &quot;pln�&quot; a proto jim p�i�ad�me
+                    podm�nku &quot;<span class="style1">Headlight (3)</span>&quot;, sv�tla 15 a 16 se budou zap�nat v
+                    poloze &quot;tlumen�&quot; pri�ad�me jim tedy podm�nku &quot;<span class="style1">Headlight
+                      (2)</span>&quot;. </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000' class="bodystyle">
+                  <div align="justify">A nyn� dopln�me omezuj�c� podm�nky pro za�azen� lokomotivy do consistu. <br>
+                    Sv�tl�m 15, 16, 17 18 p�i�ad�me podm�nku &quot;<span class="style1">Unit (5)</span>&quot; - sv�tla
+                    sv�t�, pokud je loko na konci soupravy ale je ��zeno ze zadn�ho stanovi�t� <br>
+                    Sv�tl�m 2 a 4 p�i�ad�me podm�nku &quot;<span class="style1">Unit (4)</span>&quot; - sv�tla sv�t�
+                    pokud je loko prvn� v souprav� (plat� i pokud jede solo !) a je ��zen� ze zadn�ho stanovi�t�. </div>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+      </table>
+      <br>
+      <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+        bordercolorlight='#008000' bordercolordark='#002000'>
         <tr>
-          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Pln� sv�tla </span></span></td>
+          <td>
+            <table width="100%" border="0" cellspacing="5" cellpadding="2">
+              <tr>
+                <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Tabulka sv�tel
+                    </span></span></td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor='#003000'>
+                  <div align="center" class="bodystyle">Nejl�pe je zapsat si nadefinovan� podm�nky do n�jak� tabulky,
+                    kter� n�m usnadn� z�pis do eng souboru. <br>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor='#003000'><img src="../images/help6.gif" width="557" height="325"></td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor='#003000'>
+                  <div align="justify" class="bodystyle">&nbsp;M��eme si do tabulky doplnit i sou�adnice sv�tel, jejich
+                    orientaci vzhledem k os�m lokomotivy. Vyhneme se chyb�m p�i z�pisu, Pochopiteln� podle pot�eby
+                    m��eme doplnit dal�� podm�nky. N�vrh sv�tel v p��kladu nen� dogma, je jen n�vodem jak sestavit
+                    pravidla pro jednotliv� sv�tla.
+                    <p>Pro zadn� stanovi�t� nen� nutn� definovat sv�teln� ku�el, je ot��en automaticky spolu s p�epnut�m
+                      kabiny. </p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
-        <tr>
-          <td align="left" bgcolor='#003000'><div align="center" class="bodystyle">P�id�me sv�tla pro polohu p�ep�na�e &quot;pln�&quot; sv�tla <br>
-          </div></td>
-        </tr>
-        <tr>
-          <td align="left" bgcolor='#003000'><div align="center" class="bodystyle"><img src="../images/help5.jpg" width="600" height="252"></div></td>
-        </tr>
-        <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">P�idali jsme sv�tla 11 a 12 na �elo lokomotivy, proto�e chceme aby sv�tla m�la vy��� jas ne� sv�tla tlumen�. Z�rove� jsme p�idali sv�teln� ku�el s v�t��m dosahem a men��m sklonem k ter�nu. <br>
-            Jako dal�� sv�tla jsme p�idali �erven� koncov� sv�tla na konec lokomotivy. V�echna tato sv�tla se budou ovl�dat p�ep�na�em v poloze &quot;pln�&quot; a proto jim p�i�ad�me podm�nku <span class="style1">Headlight (3) </span></div></td>
-        </tr>
-        <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle">A nyn� dopln�me omezuj�c� podm�nky pro za�azen� lokomotivy do consistu. Omez�me t�m, aby n�kter� sv�tla nesv�tila pokud p�ed lokomotivou nebo za n� m�me p�ip�a�eny vag�ny. Logick� by bylo pou��t podm�nku &quot;Coupling ()&quot; ale tato podm�nka je podmi�uj�c�, tz., �e sv�tla sv�t�, pokud je na sp��hle dal�� v�z a ne opa�n�, co� by bylo vhodn�j��.<br>
-            Sv�tl�m 1, 3, 9, 10, 11, 12, 13 a 14 p�i�ad�me podm�nku &quot;<span class="style1">Unit (2)</span>&quot; - sv�tla sv�t�, pokud je loko v �ele soupravy<br>
-            Sv�tl�m 6 a 8 p�i�ad�me podm�nku &quot;<span class="style1">Unit (3)</span>&quot; - sv�tla sv�t� pokud je loko posledn� v souprav� (plat� i pokud jede solo !) </td>
-        </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
-        <tr>
-          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Sv�tla pro zadn� stanovi�t� </span></span></td>
-        </tr>
-        <tr>
-          <td align="left" bgcolor='#003000'><div align="justify" class="bodystyle">P�id�me sv�tla pro zadn� stanovi�t� (pro opa�n� sm�r pohybu lokomotivy). Aby MSTS poznal, �e ��d�me lokomotivu ze zadn�ho stanovi�t� a sm�r j�zdy se n�m zm�nil byly zavedeny nov� podm�nky Unit (4) a Unit (5). Unit (4) ��k�, �e lokomotiva z�st�v� st�le v �ele soupravy, je v�ak ��zena ze zadn�ho stanovi�t�. Odpov�d� Unit (2) pro p�edn� stanovi�t�. Unit (5) ��k�, �e lokomotiva je na konci soupravy (nebo solo) a je ��zena ze zadn�ho stanovi�t�. To odpov�d� Unit (3) pro p�edn� stanovi�t�. <br>
-          </div></td>
-        </tr>
-        <tr>
-          <td align="left" bgcolor='#003000'><div align="center" class="bodystyle"><img src="../images/help3.jpg" width="600" height="252"></div></td>
-        </tr>
-        <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">P�idali jsme sv�tla 15, 16, 17, 18 na konec lokomotivy a sv�tla 2 a 4 na p�edek lokomotivy. <br>
-            Sv�tla 17, 18, 2 a 4 se budou ovl�dat p�ep�na�em v poloze &quot;pln�&quot; a proto jim p�i�ad�me podm�nku &quot;<span class="style1">Headlight (3)</span>&quot;, sv�tla 15 a 16 se budou zap�nat v poloze &quot;tlumen�&quot; pri�ad�me jim tedy podm�nku &quot;<span class="style1">Headlight (2)</span>&quot;. </div></td>
-        </tr>
-        <tr>
-          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">A nyn� dopln�me omezuj�c� podm�nky pro za�azen� lokomotivy do consistu. <br>
-            Sv�tl�m 15, 16, 17 18 p�i�ad�me podm�nku &quot;<span class="style1">Unit (5)</span>&quot; - sv�tla sv�t�, pokud je loko na konci soupravy ale je ��zeno ze zadn�ho stanovi�t� <br>
-            Sv�tl�m 2 a 4 p�i�ad�me podm�nku &quot;<span class="style1">Unit (4)</span>&quot; - sv�tla sv�t� pokud je loko prvn� v souprav� (plat� i pokud jede solo !) a je ��zen� ze zadn�ho stanovi�t�. </div></td>
-        </tr>
-      </table></td>
-    </tr>
-  </table>
-  <br>
-  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-    <tr>
-      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
-        <tr>
-          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Tabulka sv�tel </span></span></td>
-        </tr>
-        <tr>
-          <td align="left" bgcolor='#003000'><div align="center" class="bodystyle">Nejl�pe je zapsat si nadefinovan� podm�nky do n�jak� tabulky, kter� n�m usnadn� z�pis do eng souboru. <br>
-          </div></td>
-        </tr>
-        <tr>
-          <td align="center" bgcolor='#003000'><img src="../images/help6.gif" width="557" height="325"></td>
-        </tr>
-        <tr>
-          <td align="center" bgcolor='#003000'><div align="justify" class="bodystyle">&nbsp;M��eme si do tabulky doplnit i sou�adnice sv�tel, jejich orientaci vzhledem k os�m lokomotivy. Vyhneme se chyb�m p�i z�pisu, Pochopiteln� podle pot�eby m��eme doplnit dal�� podm�nky. N�vrh sv�tel v p��kladu nen� dogma, je jen n�vodem jak sestavit pravidla pro jednotliv� sv�tla.
-            <p>Pro zadn� stanovi�t� nen� nutn� definovat sv�teln� ku�el, je ot��en automaticky spolu s p�epnut�m kabiny. </p>
-          </div></td>
-        </tr>
-      </table></td>
-    </tr>
-  </table>
-</div>
-</body>
-</html>
+      </table>
+    </div>
+  </body>
+
+  </html>
