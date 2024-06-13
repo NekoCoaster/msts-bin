@@ -1,101 +1,258 @@
 <%@LANGUAGE="JAVASCRIPT"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
-<meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simulator, MS, Kuju, update, upgrade">
-<title>MSTS Bin - main</title>
-<link href="../main.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-<!--
-#Layer1 {
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:100%;
-	height:100%;
-	overflow:auto;
-	z-index:1;
-}
-body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
--->
-</style>
-</head>
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html>
 
-<body>
-<div id="Layer1">
-<table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-	<tr>
-		<td >
-		<table width="100%" border="0" cellspacing="5" cellpadding="2" >
-			<tr>
-				<td align="center" bgcolor='#002000' ><span class="subtitle">Welcome on  MSTS Bin pages<br>
-				  </span><span class="bodystyle">(Please excuse my english)</span></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-<br>
-<table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-	<tr>
-		<td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
-			<tr>
-				<td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">What is   MSTS Bin and what isn't </span></span></td>
-			</tr>
-			<tr>
-				<td align="left" bgcolor='#003000'><p align="justify" class="bodystyle">				MSTS Bin is a new project, aimed to try improve some features of MSTS (MS Train simulator) ver. 1.1.xx. It has arisen persuant to requirements of users put simulator near to reality and improve some features, what was forgotten by authors or authors maybe rate this feature unusefull.. <br>
-				MSTS Bin is binary modificaton of original program of MS, som like unofficial update or upgrade. <br>
-				</p>					</td>
-			</tr>
-			<tr>
-				<td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">MSTS Bin is in any case not a &quot;crack&quot;, or like it tool for illegal using of game, evade copyright or to obtain unauthorized profit. It is dedicated to users with licensed game to improve its features and to developers who worked on tracks, cars and object for simplification some tasks. It is designed for solving some problems during  gameplay. </div></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-<br>
-<table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-	<tr>
-		<td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
-			<tr>
-				<td align="center" bgcolor='#002000'><span class="subtitle">Why MSTS Bin</span></td>
-			</tr>
-			<tr>
-				<td align="left" bgcolor='#003000'><p align="justify"><span class="bodystyle">					MSTS	is still the best train simulator, even thought it is slightly old. Thanks to hard work of many fans who continue on development of tracks, who make new objects and cars, MSTS is not dead..<br>
-				Simultaneously is true MSTS is full of lacks. Some may be eliminated throgh changes of definition files or through exchange of objects, but some cannot be solved with simple methods. Graphical engine is the worst in present game world.</span></p>					</td>
-			</tr>
-			<tr>
-				<td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">There grew idea, modificate som instrictions of program to improve or add some new features to simulator and solve some problems with its using. </div></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-<br>
-<table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
-	<tr>
-		<td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
-			<tr>
-				<td align="center" bgcolor='#002000'><span class="subtitle">About This Web Archive</span></td>
-			</tr>
-			<tr>
-				<td align="left" bgcolor='#003000'><p align="justify" class="bodystyle">This website archive serves as a repository of historical information and resources related to MSTS Bin. It preserves the original content and links from the original website, even though some of these links may no longer be functional.<br></p></td>
-				
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simulator, MS, Kuju, update, upgrade">
+		<title>MSTS Bin - main</title>
+		<link href="../main.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			<!--
+			#Layer1 {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				z-index: 1;
+			}
+
+			body {
+				margin-left: 0px;
+				margin-top: 0px;
+				margin-right: 0px;
+				margin-bottom: 0px;
+			}
+			-->
+		</style>
+	</head>
+
+	<body>
+		<div id="Layer1">
+			<table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+				bordercolorlight='#008000' bordercolordark='#002000'>
+				<tr>
+					<td>
+						<table width="100%" border="0" cellspacing="5" cellpadding="2">
+							<tr>
+								<td align="center" bgcolor='#002000'><span class="subtitle">Welcome on MSTS Bin
+										pages<br>
+									</span><span class="bodystyle">(Please excuse my english)</span></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+				bordercolorlight='#008000' bordercolordark='#002000'>
+				<tr>
+					<td>
+						<table width="100%" border="0" cellspacing="5" cellpadding="2">
+							<tr>
+								<td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">What
+											is MSTS Bin and what isn't </span></span></td>
+							</tr>
+							<tr>
+								<td align="left" bgcolor='#003000'>
+									<p align="justify" class="bodystyle"> MSTS Bin is a new project, aimed to try
+										improve some features of MSTS (MS Train simulator) ver. 1.1.xx. It has arisen
+										persuant to requirements of users put simulator near to reality and improve some
+										features, what was forgotten by authors or authors maybe rate this feature
+										unusefull.. <br>
+										MSTS Bin is binary modificaton of original program of MS, som like unofficial
+										update or upgrade. <br>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" bgcolor='#003000' class="bodystyle">
+									<div align="justify">MSTS Bin is in any case not a &quot;crack&quot;, or like it
+										tool for illegal using of game, evade copyright or to obtain unauthorized
+										profit. It is dedicated to users with licensed game to improve its features and
+										to developers who worked on tracks, cars and object for simplification some
+										tasks. It is designed for solving some problems during gameplay. </div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+				bordercolorlight='#008000' bordercolordark='#002000'>
+				<tr>
+					<td>
+						<table width="100%" border="0" cellspacing="5" cellpadding="2">
+							<tr>
+								<td align="center" bgcolor='#002000'><span class="subtitle">Why MSTS Bin</span></td>
+							</tr>
+							<tr>
+								<td align="left" bgcolor='#003000'>
+									<p align="justify"><span class="bodystyle"> MSTS is still the best train simulator,
+											even thought it is slightly old. Thanks to hard work of many fans who
+											continue on development of tracks, who make new objects and cars, MSTS is
+											not dead..<br>
+											Simultaneously is true MSTS is full of lacks. Some may be eliminated throgh
+											changes of definition files or through exchange of objects, but some cannot
+											be solved with simple methods. Graphical engine is the worst in present game
+											world.</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" bgcolor='#003000' class="bodystyle">
+									<div align="justify">There grew idea, modificate som instrictions of program to
+										improve or add some new features to simulator and solve some problems with its
+										using. </div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+				bordercolorlight='#008000' bordercolordark='#002000'>
+				<tr>
+					<td>
+						<table width="100%" border="0" cellspacing="5" cellpadding="2">
+							<tr>
+								<td align="center" bgcolor='#002000'><span class="subtitle">Archiver's Notes <img
+											src="../images/new_sm.gif"><br>
+									</span><span class="bodystyle">This section from here on out is not part of the
+										original webpage, and serves to answer some of the FAQs reguarding the purpose
+										of this webpage</span>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+				bordercolorlight='#008000' bordercolordark='#002000'>
+				<tr>
+					<td>
+						<table width="100%" border="0" cellspacing="5" cellpadding="2">
+							<tr>
+								<td align="center" bgcolor='#002000'><span class="subtitle">About this Web
+										Archive</span></td>
+							</tr>
+							<tr>
+								<td align="left" bgcolor='#003000'>
+									<p align="justify" class="bodystyle">
+										This web archive serves as a snapshot of the original MSTS Bin webpage, which
+										was originally host on the domain <a href="http://mstsbin.uktrainsim.com"
+											target="_blank"><b><u>mstsbin.uktrainsim.com</u></b></a>.
+										<br>
+									</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td align="left" bgcolor='#003000'>
+									<p align="justify" class="bodystyle">
+										However, before the original website went down, I was able to perform a full
+										local backup copy of the webpage on the 27th of August, 2023, and have since
+										then re-uploaded it and hosted it on Github Pages as a reference for future
+										visitors.<br>
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+				bordercolorlight='#008000' bordercolordark='#002000'>
+				<tr>
+					<td>
+						<table width="100%" border="0" cellspacing="5" cellpadding="2">
+							<tr>
+								<td align="center" bgcolor='#002000'><span class="subtitle">What's the difference
+										between this Web Archive, compared to other archive sites like
+										archive.org?</span></td>
+							</tr>
+							<tr>
+								<td align="left" bgcolor='#003000'>
+									<p align="justify" class="bodystyle">
+										While it is true that 1:1 snapshots of the original MSTS Bin webpage can already
+										be found on archive.org, this web archive aims to provide additional quality of
+										life improvements which were not present in the original snapshots.<br>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" bgcolor='#003000'>
+									<p align="justify" class="bodystyle">
+										Additionally, archive.org can sometimes be slow to load, and may not always
+										be available. By having this site hosted on Github pages, this means that there
+										is now a more reliable and faster alternative to archive.org. Especially for
+										those who are trying to download the original MSTS Bin files.<br>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" bgcolor='#003000'>
+									<p align="justify" class="bodystyle">
+										If you would like to see the differences between this web archive and the
+										original website, you can visit the Github repository's README.md for this
+										project
+										<a href="https://github.com/TheNekoBot/TheNekoBot.github.io" target="_blank">
+											<u><b>here</b></u></a> for more details<br>
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000'
+				bordercolorlight='#008000' bordercolordark='#002000'>
+				<tr>
+					<td>
+						<table width="100%" border="0" cellspacing="5" cellpadding="2">
+							<tr>
+								<td align="center" bgcolor='#002000'><span class="subtitle">How can I trust that the
+										files on this site have not been tampered with?</span></td>
+					</td>
 				</tr>
 				<tr>
-
-				<td align="left" bgcolor='#003000'><p align="justify" class="bodystyle">If you have any questions or require further information, please visit <a href="https://github.com/TheNekoBot/TheNekoBot.github.io"><b><u>the Github repository</u></b></a> which currently hosts this webpage, and open an issue ticket to leave a message or provide feedback.<br></p></td>
+					<td align="left" bgcolor='#003000'>
+						<p align="justify"><span class="bodystyle">As with all files downloaded from the internet, you
+								should always take precaution to scan the downloaded files with an antivirus
+								program before running them.
+							</span></p>
+					</td>
 				</tr>
 				<tr>
-				<td align="left" bgcolor='#003000'><p align="justify" class="bodystyle">We appreciate your understanding and hope that you'll find this archive useful.<br></p></td>
+					<td align="left" bgcolor='#003000' class="bodystyle">
+						<div align="justify">While I can assure that the files on this site have not been tampered
+							with and were directly uploaded from the scraped backup copy. You should always verify
+							the integrity of the files by comparing the checksum of these with the original ones
+							hosted on archive.org<br>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" bgcolor='#003000' class="bodystyle">
+						<div align="justify">Finally, all changes made to this webpage are tracked on the Github
+							repository, which you can view at <a
+								href="https://github.com/TheNekoBot/TheNekoBot.github.io/commits/main/"
+								target="_blank"><u><b>https://github.com/TheNekoBot/TheNekoBot.github.io/commits/main/</b></u></a><br>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+			</td>
 			</tr>
-		</table></td>
-	</tr>
-</table>
-</div>
-</body>
-</html>
+			</table>
+		</div>
+	</body>
+
+	</html>
