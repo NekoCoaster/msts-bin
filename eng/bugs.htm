@@ -1,0 +1,98 @@
+<%@LANGUAGE="JAVASCRIPT"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simulátor, MS, Kuju, update, upgrade">
+<title>MSTS Bin - Tech. specifications</title>
+<link href="../main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:500px;
+	overflow:auto;
+	z-index:1;
+}
+body {
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style4 {color: #FFFF00;
+	font-size: 12px;
+}
+-->
+</style>
+</head>
+<body>
+<div id="Layer1">
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Known bugs</span></span></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td align="left" bgcolor='#003000'><p class="bodystyle"> Here, you can find known bugs of MSTS which are not fixed till now.<br>
+          </p></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr bgcolor='#002000'>
+          <td align="center" bgcolor="#001000" class="style4">Tractive force</td>
+          </tr>
+        <tr align="left">
+          <td width="50%" bgcolor='#003000' class="bodystyle">Diesel-eletric loco has wrong tractiv force computation, for speed &gt;0 some parts of equation are not used correctly.<br>
+            It is KUJU bug in all versions of MSTS.</td>
+        </tr>
+        <tr>
+          <td width="50%" align="center" bgcolor='#001000' class="style4">Zero power on EL</td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle">On EL after you switch pantho or in some case after start activity, loco is power less, even if voltage is displayed.<br>
+            It is due Cuts Power Monitor function what is activated. You have use Vigilance reset button to switch power ON. It is Bin feature dependent on wrong monitors reset function.</td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#001000' class="style4">Unit() parameter is not used for lost consists</td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle">MSTS is not able handle Unit() parameter for lost consists (on yard or siding). MSTS does not assemble consist from these wags and has not got information about wag position in chain (Unit() parameter is empty). It is MSTS feature. You have define desired lights by other conditions using.</td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#001000' class="style4">NumWheels parameter</td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><p class="bodystyle">The second  NumWheels  value (in eng file) is being used for adhesion when using friction braking. It should only be used for  adhesion under power and dynamic braking. The first NumWheels value should be used for friction braking. Joe Realmuto &quot;Eng Manual&quot; in detail.</td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#001000' class="style4">Wrong movement in reverse when weelslip ocurs</td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><p class="bodystyle">When  running in reverse and wheelslip occurs, the locomotive starts 
+                pushing the  train forward rather than back.  The  train will actually 
+                slow down,  stop, and then start traveling forward when the wheelslip 
+            indicator  is on.  For firs investigation it has been a bug in  the original MSTS.</p></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

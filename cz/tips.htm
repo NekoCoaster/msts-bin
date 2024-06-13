@@ -1,0 +1,174 @@
+<%@LANGUAGE="JAVASCRIPT"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simulátor, MS, Kuju, update, upgrade">
+<title>MSTS Bin - tips, cheats</title>
+<link href="../main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:500px;
+	overflow:auto;
+	z-index:1;
+}
+body {
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style1 {color: #FFFF00}
+.style3 {color: #00FF00}
+-->
+</style>
+</head>
+<body>
+<div id="Layer1">
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Tipy a triky nejen pro MSTS </span></span></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="justify" class="bodystyle"> Některé	tipy	a triky, které možná neznáte, některá skrytá nebo nedokumentovaná nastavení a parametry, které měly sloužit asi jen programátorům. <br>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr bgcolor='#002000'>
+          <td width="21%" align="center" class="bodystyle">parametr</td>
+          <td width="79%" align="center" class="bodystyle">komentář</td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">train.exe - perflog </td>
+          <td align="left" bgcolor='#003000' class="bodystyle">Spustíte-li MSTS s tímto parametrem, jsou během aktivity protokolovány zajímavé údaje o FPS, počtu načítaných objektů a polygonů, polohy vlaku atd. Vytvořený soubor &quot;perflog.csv&quot; najdete v rootu MSTS. Lze jej načíst třeba do MS excelu a přehledně zobrazit v grafech. </td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">train.exe -brick </td>
+          <td align="left" bgcolor='#003000' class="bodystyle"><p>Na koleje do startovací pozice aktivity, je místo soupravy umístěna drezína! Její ovládání je 5-ti klávesami v pravém dolním rohu klávesnice takto:<br>
+            &quot;,&quot; a &quot;.&quot; přesouvá drezínu mezi jednotlivými kolejemi doleva a doprava<br>
+            &quot;-&quot; přepíná směr jízdy dopředu nebo dozadu<br>
+            &quot;ů&quot; a &quot;§&quot; řídí rychlost jízdy.<br>
+            Pozor! V tomto režimu je definována jen jedna kamera! Pokus o přepnutí na jiný pohled vede k pádu MSTS. <br>
+          </p></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">App.fbk<br>
+            shaders config bug </td>
+          <td align="left" bgcolor='#003000' class="bodystyle"> V konfiguračním souboru App.fbk v rootu MSTS je chybně uveden počet shaderů. Způsobuje to nekorektní zobrazování lesklých textur vozů zřejmé zejména v noci (některé vagóny jsou osvětleny jakoby denním světlem nebo textury blikají). Vyhledejte část<br>
+                <br>
+                <font color="#0033FF">shader_cfgs</font> (<br>
+                <span class="style3">22</span><br>
+            shader_cfg &quot;ShaderCfg-Alpha-Smoke&quot; (. . . . . <br>
+            <br>
+            a opravte na správný počet <span class="style3">23</span> <br>
+            <br>
+            (zdroj:<a href="http://steam4me.railpage.org.au/trainsim/index.html" target="_blank"> steam4me.railpage.org.au)</a></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">Nastavení &quot;Monitors&quot; </td>
+          <td align="left" bgcolor='#003000' class="bodystyle"><p>Někteří uživatelé se na mne obrátili s požadavkem na řešení problémů s monitory, které lze řešit nastavením v eng. souborech. Zdeje tedy výčet všech podmínek a událostí, které lze s kterýmkoliv &quot;monitorem&quot; spojit. stav 0 - nevyhodnocuje se, stav 1 -vyhodnocuje se:</p>
+                <p> VigilanceMonitor (<br>
+                  MonitoringDeviceMonitorTimeLimit ( 10 )<br>
+                  MonitoringDeviceAlarmTimeLimit ( 5 )<br>
+                  MonitoringDevicePenaltyTimeLimit ( 5 )<br>
+                  MonitoringDeviceCriticalLevel ( 5 )<br>
+                  MonitoringDeviceResetLevel ( 5 )<br>
+                  MonitoringDeviceAppliesFullBrake ( 1 )<br>
+                  MonitoringDeviceAppliesEmergencyBrake ( 1 )<br>
+                  MonitoringDeviceAppliesCutsPower ( 1 )<br>
+                  MonitoringDeviceAppliesShutsDownEngine ( 1 )<br>
+                  MonitoringDeviceAlarmTimeBeforeOverSpeed ( 30 )<br>
+                  MonitoringDeviceDoesSuppressionReset ( 1 )<br>
+                  MonitoringDeviceTriggerOnHighCurrent ( 2000 )<br>
+                  MonitoringDeviceTriggerOnLowMainResPressire ( 110 )<br>
+                  MonitoringDeviceTriggerOnOverRPM ( 1200 )<br>
+                  MonitoringDeviceTriggerOnOverspeed ( 250 )<br>
+                  MonitoringDeviceTriggerOnTrackOverspeed ( 1 )<br>
+                  MonitoringDeviceTriggerOnTrackOverspeedMargin ( 1 )<br>
+                  MonitoringDeviceResetOnBrakeFullyOn ( 0 )<br>
+                  MonitoringDeviceResetOnBrakeOff ( 0 )<br>
+                  MonitoringDeviceResetOnDirectionNeutral ( 1 )<br>
+                  MonitoringDeviceResetOnDynamicBrakeOff ( 0 )<br>
+                  MonitoringDeviceResetOnDynamicBrakeOn ( 0 )<br>
+                  MonitoringDeviceResetOnEngineAtIdle ( 0 )<br>
+                  MonitoringDeviceResetOnResetButton ( 1 )<br>
+                  MonitoringDeviceResetOnZeroSpeed ( 0 )<br>
+                  MonitoringDeviceResetOnZeroThrottle ( 0 )<br>
+                  )<br>
+                  <br>
+                  Použití všech společně pro uvedený monitor nemá praktický význam, je to jen výčet možností . Myslím, že smysl je zřejmý. Nezkoušel jsem všechny, ale většina z nich je funkční. Jeden event zde chybí, vynulování alertru při zapnutí zvonku, ale je to pravděpodobně bug a budu se ho snažit odstanit. </p></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">Adresáře v EngMex </td>
+          <td align="left" bgcolor='#003000' class="bodystyle">Pro zápis adresářů nepoužívejte jednoduchá lomítka, EngMexu se to nelíbí a soubor vám neotevře. Použijte následující syntaxi:<br>
+            CabView ( &quot;..\\..\\common.cab\\cd460\\cd460.cvf&quot; ) - <font color="#FFFF00">Autor</font><br>
+            <br>
+            Zásadním problémem nejsou lomítka ať jednoduchá nebo složená,problém je v tom
+            že i když budou složená a nebo jednoduchá tak pokud to nebude celé ohraničené uvozovkami tak se mi neotevře ani jedno a vliv to na lomítka nebude mít,možná
+            by bylo lepší napsat co musí být v uvozovkách aby se program spustil: v uvozovkách nemusí být všechno co nemá žádnej odkaz
+            naopak pokud použiji jakýkoliv odkaz at na zvuky ,kabinu ,model ,to všechno musí být v uvozovkách.
+            Určitě by se měli než budou chtít eng,nebo wag spustit kouknout se v nějakém editoru zda tam ty uvozovky jsou,a pokud ne tak je manuálně dodělat,a pak
+            teprve soubor spustit přes engmex. <a href="mailto:vlastinek@volny.cz"><font color="#FFFF00">vlastinek@volny.cz</font></a></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">Eng / Wag Manual </td>
+          <td align="left" bgcolor='#003000' class="bodystyle">Našel jsem velice podrobný manuál pro eng a wag soubory, autoři Rudolf Richter a Joe Realmuto <br>
+            Manuál je bohužel pouze v angličtině, třeba někdo nabídne překlad.<br>
+            Download: <a href="../data/Eng_Wag_Manual%202.0e.zip"><font color="#FFFF00">Eng_Wag_Manual 2.0e.zip</font></a></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" class="subtitle">Návody</td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000'><div align="center" class="bodystyle"> Rozhodl jsem se podělit o některé zkušenosti a tak přidávám návod jak na textury pro MSTS<br>
+                    <a href="tutor.htm" target="mainFrame"><span class="style1">Návod jak se obejít bez digitálního fotoaparátu nebo pracného vyhledávání obrázků na webu</span></a><br>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td colspan="2" align="center" class="subtitle">Značení a popisy vozů ČD </td>
+        </tr>
+        <tr>
+          <td width="94%" align="center" bgcolor='#003000'><div align="justify" class="bodystyle"><font color="#FFFF00">S laskavou pomocí p. Alana Butschka</font> (zarytý fanda železnice a významná osobnost ČD) uvádím význam a umístění značek a popisů na vozech ČD. Všechny popisy a značky jsou udělány ve Photoshopu, jsou v měřítku a jsou editovatelné a ke stažení ve formátu .psd i s Alpha maskou. <br>
+          </div></td>
+          <td width="6%" align="center"><a href="znacky1.htm" target="_blank"><img src="../images/rarrow.gif" width="20" height="25" border="0"></a></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

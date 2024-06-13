@@ -1,0 +1,185 @@
+<%@LANGUAGE="JAVASCRIPT"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simulátor, MS, Kuju, update, upgrade">
+<title>MSTS Bin - main</title>
+<link href="../main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:500px;
+	overflow:auto;
+	z-index:1;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style1 {color: #0099FF}
+.style3 {color: #FFFF00}
+-->
+</style>
+</head>
+
+<body>
+<div id="Layer1">
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td width="25" align="center" bgcolor='#002000' ><img src="../images/larrow.gif" width="20" height="25" border="0"></td>
+          <td align="center" bgcolor='#002000' ><span class="subtitle">Help+</span></td>
+          <td width="25" align="center" bgcolor='#002000' ><a href="help3.htm"><img src="../images/rarrow.gif" width="20" height="25" border="0"></a></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td colspan="2" align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Lights switching </span></span></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="left" bgcolor='#003000'><div align="center" class="bodystyle"> How set-up lights for new MSTS Bin features? <br>
+          </div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="justify"><span class="bodystyle"><img src="../images/help0.jpg" width="300" height="309"></span></div></td>
+          <td align="left" bgcolor='#003000'><div align="justify"><span class="bodystyle">At first you have to define what lights you want and how they should be operated. You can use some new features for decreasing lights quantity. </span></div></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="left" bgcolor='#003000' class="bodystyle"><div align="center">Draw all lights what you want.<br>
+                    <img src="../images/help3.jpg" width="600" height="252"> <br>
+          </div>
+                <br></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="left" bgcolor='#003000' class="bodystyle">Yellow bordered are lights for rear cab and reversed direction of way. </td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td align="center" bgcolor='#002000'><span class="subtitle">Lights operation </span></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="justify"><span class="bodystyle"> Lights in MSTS are operated with 3-state trigger. It has 3 function, 1- off, 2 - dim lights, 3 - full lights (or bright). Trigger independent is 0-state. In Lights definition it is first condition &quot;Headlight ()&quot; </span></div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">
+            <p>In MSTSBin you can use next add-in Headlight states &quot;dim+bright&quot;. For this condition are lights on for both position of trigger, dim and bright. With this feature you can save some lights definitions.<br>
+                    <br>
+            </p>
+          </div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="center"><span class="subtitle">Dim lights </span><br>
+            For primary cab define wanted lights. <br>
+          </div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="center">&nbsp;<img src="../images/help4.jpg" width="600" height="252"></div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">Define dim lights what should be on for first position of trigger - &quot;dim&quot;. <br>
+            Lights 1, 3, 5, 7, 11, 12 are &quot;<span class="style1">Type (0)</span>&quot; , it means sumulated light, light 9 is cone light for dim lights. It has shorter radius and  angle could be narrowed.<br>
+            Lights 11 a 12 should be on only for &quot;dim&quot; position of trigger and we'll use condition <span class="style1">Headlight (2)</span><br>
+            Lights 1, 3, 
+            5 a 7 should be on for both positions &quot;dim&quot; and &quot;bright&quot;, you can use condition MSTSBin specific  <span class="style1">Headlight (4) </span><br>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Bright lights </span></span></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="center" class="bodystyle">Add lights for &quot;bright&quot; position of trigger <br>
+          </div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="center" class="bodystyle"><img src="../images/help5.jpg" width="600" height="252"></div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">We define lights  11 a 12 because they are  more bright. Simultaneously we define cone light 10 for bright lights with higher radius and angle. Next lights 6, 8 are red lights on tailing of loco. All this lights should be on for &quot;bright&quot; trigger position, we use condition <span class="style1">Headlight (3) </span></div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><p>And now we add conditions for loco placing in consist. This condition turn off lights if in front or behind loco are some cars.<br>
+            For lights 1, 3, 9, 10, 11, 12, 13 and 14 we'll use condition &quot;<span class="style1">Unit (2)</span>&quot; - lights are on if loco is front of consist<br>
+  For lights 6 and 8 we'll use condition &quot;<span class="style1">Unit (3)</span>&quot; - lights are on only if loco is rear car of consist.</p>
+            </td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Lights for rear cab (reversed direction of way) </span></span></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="justify" class="bodystyle">Yellow bordered lights are lights for reversed direction.  You can copy lights for normal way and move them to right positions. Because position of driver is changed we heve to tell MSTS that direction consist is drived to other way. For this we'll use new conditions Unit (4) and Unit (5). Unit (4) tell than loco is still in front of train but direction is reversed. It is the same as  Unit (2) for front cab. Unit (5) mean, that loco is last in consist but direction is reversed. It is matching Unit (3) for front cab. <br>
+          </div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="center" class="bodystyle"><img src="../images/help3.jpg" width="600" height="252"></div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">Recapitulation<br>
+            Lights 15, 16, 17, 18 on back and lights 2 and 4 on front of loco. <br>
+            Lights 17, 18, 2 and 4  &quot;bright&quot; with condition &quot;<span class="style1">Headlight (3)</span>&quot;, lights 15 and 16  &quot;dim&quot; with condition &quot;<span class="style1">Headlight (2)</span>&quot;. </div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">Lights 15, 16, 17, 18 condition &quot;<span class="style1">Unit (5)</span>&quot;<br>
+            Lights  2 and 4 condition &quot;<span class="style1">Unit (4)</span>&quot; </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Lights table</span></span></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="center" class="bodystyle">For better orientation and controll you can design table of lights. You can add more parameters like position color, etc. </div></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000'><img src="../images/help6e.gif" width="565" height="325"></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000'><div align="justify" class="bodystyle">
+            <p>Lights definitions aren't dogma. It is only specimen how to ...<br>
+              With table you can prevent any error.</p>
+            <p>For rear cab isn't needed define light cone lights, these are flipped automaticaly with cab switching. </p>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

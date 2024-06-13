@@ -1,0 +1,297 @@
+<%@LANGUAGE="JAVASCRIPT"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simulátor, MS, Kuju, update, upgrade">
+<title>MSTS Bin - galery</title>
+<link href="../main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:auto;
+	overflow:auto;
+	z-index:1;
+}
+body {
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="Layer1">
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#002000'><p class="bodystyle"><span class="subtitle">Galerie - několik obrázků a popis implementovaných funkcí</span></p></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">Pokud bude dostatek web prostoru přidám i nějaké kratší video </td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr bgcolor='#002000'>
+          <td align="center" bgcolor='#002000' class="subtitle">Změna textur interiéru kabiny </td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">Jak většina ví, je interiér kabiny otázkou několika obrázků, které jsou zobrazovány na popředí krajiny při výhledu ven z kabiny. Doposud se změna zobrazení interiéru prováděla přepsáním texturami, třeba na noční textury, před startem aktivity. Nové řešení spočívá v prohledání adresáře s CAB texturami a vyhledání noční textury. V čas kdy se mění textury (při západu a východu slunce) se změní cesty k texturám a textury se znovu načtou aniž byste museli třeba jen mrknout. </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/cabday.jpg" width="350" height="263"></td>
+          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/cabnight.jpg" width="350" height="263"></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">Noční textury jsou rovněž aktivovány při vjezdu do tunelu, jedinou podmínkou správné funkce je, aby v tunelu byly použity kolejové objekty typu &quot;tun&quot;, ale to platí i u nemodifikovaného MSTS (jinak budete mít osvětlené vagóny jako ve dne a nepřepne se vám ani venkovní kamera na kameru v kabině). To je výzva pro konstruktéry tratí. MSTS podle ničeho jiného totiž nepozná, že jste v tunelu. Pokud potřebné díly kolejiva nemáte, vytvořte je kopií potřebného prvku a jeho přejmenováním, současně by textura kolejového podkladu měla být upravena na tmavší, noční. </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/tunday.jpg" width="350" height="263"></td>
+          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/tunnight.jpg" width="350" height="263"></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#002000' class="subtitle">Přepínání přední a zadní kabiny </td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">Je zachováno ale řešeno jinak, aby bylo použitelné i pro věžové lokomotivy </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" align="center" cellpadding="2" cellspacing="5">
+        <tr>
+          <td align="center" bgcolor='#002000' class="subtitle"><img src="../images/aerial.jpg" width="720"></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/front.jpg" width="720"></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/back.jpg" width="720"></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#002000' class="subtitle">Ukázka video </td>
+        </tr>
+        <tr>
+          <td align="justify" bgcolor='#003000' class="bodystyle"><div align="center"><a href="../data/tunnel.avi" target="_blank">Tunnel ukázka přímo ze hry &quot;Northeast Corridor - Acela Express<br>
+            xVid avi 320x240 - 600k </a></div></td>
+        </tr>
+        <tr>
+          <td align="justify" bgcolor='#003000' class="bodystyle"><div align="center"><a href="../data/cabs.avi" target="_blank">Kabiny ukázka přímo ze hry &quot;Northeast Corridor - CD 130.040&quot; připřažení loco <br>
+            xVid avi 320x240 - 1.4M </a></div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#002000' class="subtitle">Nové ovládání přepínání lokomotiv z &quot;Train Operations&quot; panelu </td>
+        </tr>
+        <tr>
+          <td align="justify" bgcolor='#003000' class="bodystyle"><div align="center"><a href="../data/tunnel.avi" target="_blank"></a>nové ikony pro jednotlivé typy lokomotiv a vagónů<br>
+                    <img src="../images/steem.jpg"> <br>
+                    <br>
+                    <img src="../images/diesel.gif" width="640" height="480"><br>
+                    <br>
+                    <img src="../images/mixed.jpg" width="637" height="478"></div></td>
+        </tr>
+        <tr>
+          <td align="justify" bgcolor='#003000' class="bodystyle"><div align="center"><br>
+            Přepínání do vagónů s různými interiéry <br>
+            <br>
+            <img src="../images/scrgrb1.jpg" width="350">&nbsp;&nbsp;<img src="../images/scrgrb2.jpg" width="350"></div></td>
+        </tr>
+        <tr>
+          <td align="justify" bgcolor='#003000' class="bodystyle"><div align="center"><img src="../images/scrgrb3.jpg" width="350">&nbsp;&nbsp;<img src="../images/scrgrb4.jpg" width="350"></div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#002000' class="subtitle">Úpravy kamer </td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="center">S tracking kamerou můžete odjet až na 500m<br>
+                    <br>
+                    <img src="../images/camera.jpg" width="500"></div></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="subtitle">Rozšířené ladící funkce </td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/hud.gif" width="500" height="351"></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#002000' class="subtitle">Nové funkce v akci </td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="center"><a href="../data/train2.avi" target="_blank">Ukázka ze hry: &quot;Northeast Corridor - Připojení lost konzistu<br>
+            Xvid AVI 320x240 - 3.03MB </a><br>
+            <br>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#002000' class="subtitle">Nové funkce v akci </td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="center"><a href="../data/demo2.avi" target="_blank">Ukázka ze hry: &quot;Innsbruck - zastávka ve stanici <br>
+            Xvid AVI 400x300 - 3.1MB </a><br>
+            <br>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td colspan="2" align="center" bgcolor='#003000' class="bodystyle">Nezávislé ovládání dveří </td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/doors1.jpg" width="350"></td>
+          <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/doors2.jpg" width="350"></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">Můžete si moci v noci rozsvítit v kabině</td>
+        </tr>
+        <tr>
+          <td bgcolor='#003000' class="bodystyle"><div align="center" class="bodystyle"><img src="../images/cablight.jpg" width="720" height="175"></div>
+                <div align="center"></div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">Samostatné sběrače </td>
+        </tr>
+        <tr>
+          <td bgcolor='#003000' class="bodystyle"><div align="center" class="bodystyle"><img src="../images/pantho.jpg" width="720" height="180"></div>
+                <div align="center"></div></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle"><a href="../data/pantho.avi" target="_blank">Video ukázka<br>
+            Xvid AVI 640x480 - 2.1MB</a><a href="../data/demo2.avi" target="_blank"> </a></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">Opravené zvuky pro  helper loko </td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle"><a href="../data/helpr.avi">Video show <br>
+            Xvid AVI 640x480 - 1.4MB</a> </td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+          <tr>
+            <td colspan="2" align="center" bgcolor='#003000' class="bodystyle">Indikace traťové rychlosti </td>
+          </tr>
+          <tr>
+            <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/speed1a.jpg" width="350" height="244"></td>
+            <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/speed2a.jpg"></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center" bgcolor='#003000' class="bodystyle"><img src="../images/speed3.jpg" width="156" height="213"></td>
+          </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+</div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<%@LANGUAGE="JAVASCRIPT"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simulátor, MS, Kuju, update, upgrade">
+<title>MSTS Bin - main</title>
+<link href="../main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:500px;
+	overflow:auto;
+	z-index:1;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style1 {color: #0099FF}
+.style3 {color: #FFFF00}
+-->
+</style>
+</head>
+
+<body>
+<div id="Layer1">
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td width="25" align="center" bgcolor='#002000' ><img src="../images/larrow.gif" width="20" height="25" border="0"></td>
+          <td align="center" bgcolor='#002000' ><span class="subtitle">Help+<br>
+          </span><span class="bodystyle">Je lepší se 2x zeptat než zbytečně tápat </span></td>
+          <td width="25" align="center" bgcolor='#002000' ><a href="help3.htm"><img src="../images/rarrow.gif" width="20" height="25" border="0"></a></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td colspan="2" align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Přepínání světel </span></span></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="left" bgcolor='#003000'><div align="justify" class="bodystyle"> Jak nastavit světla abychom využili nových vlastností MSTSBin? <br>
+          </div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="justify"><span class="bodystyle"><img src="../images/help0.jpg" width="300" height="309"></span></div></td>
+          <td align="left" bgcolor='#003000'><div align="justify"><span class="bodystyle">V prvé řadě si musíme nadefinovat, jaká světla na lokomotivě chceme a jak je chceme ovládat. Nejjednodušší by bylo všechna světla ovládat z kabiny lokomotivy což je nejbližší realitě. Přes všechnu snahu jsme však omezeni počtem ovládacích prvků a tak využijeme některé podmínky pro řízení světel za nás. </span></div></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="left" bgcolor='#003000' class="bodystyle"><div align="center">Nejprve si nakreslíme všechna světla, která chceme na lokomotivě mít.<br>
+                    <img src="../images/help3.jpg" width="600" height="252"> <br>
+          </div>
+                <br></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="left" bgcolor='#003000' class="bodystyle">Světla ve žlutých rámečcích chceme mít funkční, pokud lokomotivu řídíme ze zadního stanoviště. </td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td align="center" bgcolor='#002000'><span class="subtitle">Ovládání světel </span></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="justify"><span class="bodystyle"> Světla v MSTS jsou ovládána přepínačem světel, což je 3 polohový přepínač s funkcemi<br>
+            &quot;vypnuto - tlumená - plná&quot; světla. Mimo ovládání hráče má přepínač ještě stav 0, kdy světla nejsou závislá na nastavení přepínače. V definici světel je to první z podmínek &quot;Headlight ()&quot; </span></div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">
+            <p>MSTSBin umožňuje navolit další stav &quot;tlumená+plná&quot;. Normálně bychom museli pro obě polohy zvlášť nadefinovat světla. Tato úprava nám pomůže nějakou tu definici ušetřit. <br>
+                    <br>
+            </p>
+          </div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="center"><span class="subtitle">Tlumená světla </span><br>
+            Začneme tlumenými světly pro základní ovládané stanoviště lokomotivy. Jak to uděláme pro druhé stanoviště si řekneme později. <br>
+          </div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="center">&nbsp;<img src="../images/help4.jpg" width="600" height="252"></div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">Nadefinovali jsme světla, která mají být rozsvícena při poloze přepínače &quot;tlumená&quot;.<br>
+            Světla 1, 3, 5, 7, 11, 12 jsou &quot;<span class="style1">Type (0)</span>&quot; , to je simulovaná světla, světlo 9 je světelný kužel pro tlumená světla. Má nastaven menší dosah než plné světlo a jeho sklon k zemi je větší.<br>
+            Světla 11 a 12 mají svítit pouze při poloze přepínače &quot;tlumená&quot; přiřadíme jim tedy podmínku <span class="style1">Headlight (2)</span><br>
+            Světla 1, 3, 
+            5 a 7 mají svítit v poloze &quot;tlumená&quot; i &quot;plná&quot;. Využijeme možností MSTSBin a přiřadíme jim podmínku <span class="style1">Headlight (4) </span><br>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Plná světla </span></span></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="center" class="bodystyle">Přidáme světla pro polohu přepínače &quot;plná&quot; světla <br>
+          </div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="center" class="bodystyle"><img src="../images/help5.jpg" width="600" height="252"></div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">Přidali jsme světla 11 a 12 na čelo lokomotivy, protože chceme aby světla měla vyšší jas než světla tlumená. Zároveň jsme přidali světelný kužel s větším dosahem a menším sklonem k terénu. <br>
+            Jako další světla jsme přidali červená koncová světla na konec lokomotivy. Všechna tato světla se budou ovládat přepínačem v poloze &quot;plná&quot; a proto jim přiřadíme podmínku <span class="style1">Headlight (3) </span></div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle">A nyní doplníme omezující podmínky pro zařazení lokomotivy do consistu. Omezíme tím, aby některá světla nesvítila pokud před lokomotivou nebo za ní máme připřaženy vagóny. Logické by bylo použít podmínku &quot;Coupling ()&quot; ale tato podmínka je podmiňující, tz., že světla svítí, pokud je na spřáhle další vůz a ne opačně, což by bylo vhodnější.<br>
+            Světlům 1, 3, 9, 10, 11, 12, 13 a 14 přiřadíme podmínku &quot;<span class="style1">Unit (2)</span>&quot; - světla svítí, pokud je loko v čele soupravy<br>
+            Světlům 6 a 8 přiřadíme podmínku &quot;<span class="style1">Unit (3)</span>&quot; - světla svítí pokud je loko poslední v soupravě (platí i pokud jede solo !) </td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Světla pro zadní stanoviště </span></span></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="justify" class="bodystyle">Přidáme světla pro zadní stanoviště (pro opačný směr pohybu lokomotivy). Aby MSTS poznal, že řídíme lokomotivu ze zadního stanoviště a směr jízdy se nám změnil byly zavedeny nové podmínky Unit (4) a Unit (5). Unit (4) říká, že lokomotiva zůstává stále v čele soupravy, je však řízena ze zadního stanoviště. Odpovídá Unit (2) pro přední stanoviště. Unit (5) říká, že lokomotiva je na konci soupravy (nebo solo) a je řízena ze zadního stanoviště. To odpovídá Unit (3) pro přední stanoviště. <br>
+          </div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="center" class="bodystyle"><img src="../images/help3.jpg" width="600" height="252"></div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">Přidali jsme světla 15, 16, 17, 18 na konec lokomotivy a světla 2 a 4 na předek lokomotivy. <br>
+            Světla 17, 18, 2 a 4 se budou ovládat přepínačem v poloze &quot;plná&quot; a proto jim přiřadíme podmínku &quot;<span class="style1">Headlight (3)</span>&quot;, světla 15 a 16 se budou zapínat v poloze &quot;tlumená&quot; priřadíme jim tedy podmínku &quot;<span class="style1">Headlight (2)</span>&quot;. </div></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000' class="bodystyle"><div align="justify">A nyní doplníme omezující podmínky pro zařazení lokomotivy do consistu. <br>
+            Světlům 15, 16, 17 18 přiřadíme podmínku &quot;<span class="style1">Unit (5)</span>&quot; - světla svítí, pokud je loko na konci soupravy ale je řízeno ze zadního stanoviště <br>
+            Světlům 2 a 4 přiřadíme podmínku &quot;<span class="style1">Unit (4)</span>&quot; - světla svítí pokud je loko první v soupravě (platí i pokud jede solo !) a je řízená ze zadního stanoviště. </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td ><table width="100%" border="0" cellspacing="5" cellpadding="2" >
+        <tr>
+          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Tabulka světel </span></span></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="center" class="bodystyle">Nejlépe je zapsat si nadefinované podmínky do nějaké tabulky, která nám usnadní zápis do eng souboru. <br>
+          </div></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000'><img src="../images/help6.gif" width="557" height="325"></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000'><div align="justify" class="bodystyle">&nbsp;Můžeme si do tabulky doplnit i souřadnice světel, jejich orientaci vzhledem k osám lokomotivy. Vyhneme se chybám při zápisu, Pochopitelně podle potřeby můžeme doplnit další podmínky. Návrh světel v příkladu není dogma, je jen návodem jak sestavit pravidla pro jednotlivá světla.
+            <p>Pro zadní stanoviště není nutné definovat světelný kužel, je otáčen automaticky spolu s přepnutím kabiny. </p>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

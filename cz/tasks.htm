@@ -1,0 +1,497 @@
+<%@LANGUAGE="JAVASCRIPT"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simulátor, MS, Kuju, update, upgrade">
+<title>MSTS Bin - tasks</title>
+<link href="../main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:auto;
+	overflow:auto;
+	z-index:1;
+}
+body {
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style1 {color: #FF9900}
+.style2 {font-size: 16px; font-weight: bold; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;}
+.style3 {color: #FFFF00}
+-->
+</style>
+</head>
+<body>
+<div id="Layer1">
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Novinky a nejbližší cíle projektu </span></span></td>
+        </tr>
+        <tr>
+          <td align="left" bgcolor='#003000'><div align="justify" class="bodystyle"> V následující tabulce budu doplňovat zbožná přání, přiřazovat jim jakousi prioritu, informovat Vás o možnostech řešení v rámci projektu a o postupu řešení jednotlivých problémů. <br>
+            Aktuální popis a stav vyřešených problémů najdete na stránce &quot;Galerie&quot; nebo &quot;Download&quot; v popisu jednotlivých verzí. <br>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><div align="justify" class="bodystyle">
+        <div align="center" class="subtitle style1">Zapomeňte na všechny předchozí verze Patche!!</div>
+        <br>
+        Nová verze bude mít zcela přepracovaný systém přepínání kabin lokomotiv. Patch bude použitelný pro plnohodnotné přepínání lokomotiv a jejich řídících stanovišť jak pro jednokabinové, věžové i dvoukabinové lokomotivy se zachováním plné funkčnosti a ovladatelnosti jednotlivých lokomotiv. Současně bude vyřešena změna směru jízdy se zachováním všech jízdních vlastností lokomotiv (řazení, dynamické brzdy, jízdní odpory, přední spřáhla, světla ve směru jízdy, track monitor...), které se změnou směru jízdy souvisí. Budete moci ovládat libovolnou lokomotivu v soupravě, i ty, které budou do soupravy připojeny spojením souprav během aktivity. <br>
+      </div>
+          <table width="100%" border="0" cellspacing="1" cellpadding="1">
+            <tr>
+              <td align="center" class="subtitle"><br>
+                Některé další funkce </td>
+            </tr>
+            <tr>
+              <td class="subtitle">Cabiny, TM </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle"><font color="#00FF00">&omicron;</font> zachování přepínání denní a noční textury v závislosti na podmínkách </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle"><font color="#00FF00">&omicron;</font> oprava zobrazení Aspect Monitoru v Cab Editoru</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle"><font color="#00FF00">&omicron;</font> blokování alerteru (VM) na zelenou</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ žlutý symbol pro &quot;Výstrahu&quot; (Restricting) v TM</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ nové, plnohodnotné přepínání kabin pro všechny typy lokomotiv a souprav </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ přepínání stanoviště se znovunačtením *.cvf a zvuků cab a engine včetně nesymetrických cab. </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ řešení problému předního spřáhla </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ track monitor a výměny  odpovídající řídícímu stanovišti ve směru jízdy vlaku</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ oprava nulování povolené rychlosti na otočných bodech </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ oprava občasného chybného načítání signálů ( chyba v AWS resetu VM)</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ oprava vazby ovladačů při různých typech loko v konzistu</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ vnitřní osvětlení kabiny v noci (nebo v tunelu) </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ načítání správného cabu při přepínání aktivit den-noc </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ přenos návěsti na stojící loko</td>
+            </tr>
+            <tr>
+              <td class="subtitle">Kamery</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle"><font color="#00FF00">&omicron;</font> deaktivace vnuceného Cab_Cam v tunelu</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ kamery odpovídající směru jízdy a poloze strojvůdce </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ Tracking_Cam s možností vzdálit se do vzdálenosti až 500m</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ zmenšení minimálních vzdáleností externích kamer </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ zvětšení dosahu kamery v RE </td>
+            </tr>
+            <tr>
+              <td class="subtitle">TO</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ zobrazení struktury vlaku s orientací loko (fliplé loko) </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ správné zobrazení wags na předním spřáhle</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ zobrazení typů loko a wag, nové ikony v TO pro jednotlivé typy loko a wag </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ zobrazení aktivní loko a wag s interiérem, zvýraznění aktivní loko a odlišení wag s interiéry </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ přímé přepnutí do požadovaného interiéru z TO, možnost přepínání do libovolného vozu s interiérem </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ přímé přepnutí do požadované loko z TO </td>
+            </tr>
+            <tr>
+              <td class="subtitle">Ostatní</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ rozšířená diagnostika F5 s více informacemi pro vývojáře </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ fungující Waiting Points v aktivitě</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ počet položek pro placement v Route Editoru zvýšen z 5 na 60</td>
+            </tr>
+            <tr>
+              <td width="672" bgcolor="#003000" class="bodystyle"><p>+ oprava tooltip Dynamicé brzdy pro zobrazení v  %</p></td>
+            </tr>
+            <tr>
+              <td width="672" bgcolor="#003000" class="bodystyle"><p>+ oprava vyhodnoceni mechanicke převodovky při couvání.</p></td>
+            </tr>
+            <tr>
+              <td width="672" bgcolor="#003000" class="bodystyle"><p>+ oprava náběhu a výběhu tažné síly při couvání</p></td>
+            </tr>
+            <tr>
+              <td width="672" bgcolor="#003000" class="bodystyle"><p>+ oprava otáčení kol u flip vozů </p></td>
+            </tr>
+            <tr>
+              <td width="672" bgcolor="#003000" class="bodystyle"><p>+ oprava natáčení podvozků pro fliplé vozy</p></td>
+            </tr>
+            <tr>
+              <td width="672" bgcolor="#003000" class="bodystyle"><p>+ nezávislé otevírání dvou skupin dveří (Levé/Pravé)</p></td>
+            </tr>
+            <tr>
+              <td width="672" bgcolor="#003000" class="bodystyle"><p>+ ovládání zrcátek</p></td>
+            </tr>
+            <tr>
+              <td width="672" bgcolor="#003000" class="bodystyle"><p>+ oprava času při jízdě    aktivit přes půlnoc </p></td>
+            </tr>
+            <tr>
+              <td width="672" bgcolor="#003000" class="bodystyle"><p>+ více reálné stíny stromů</p></td>
+            </tr>
+            <tr>
+              <td width="672" bgcolor="#003000" class="bodystyle"><p>+ úprava světel vozidel pro viditelnost na vzdálenost &gt;500m (mipmap level    s&nbsp;úpravou)</p></td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle"><p>+ oprava načítání terénu při přechodu přes rovnoběžky nebo poledníky </p></td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ alokace paměti podle dostupné paměti PC </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ zvětšení FPS pro pohled z kabiny při zaplých dynamických stínech (+ 10-20 FPS podle hardware) </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ oprava TimeOfDay  podmínky světel (chyba MSTS verze 1.4!)</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ 
+                oprava vyhodnocení &quot;efficiency&quot; u AI servisů, nejmenší hodnota snížena na 0.005 pro pomalé servisy.</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ synchronizace hodin v MSTS (použití jednotného času pro všechny měřené časy) </td>
+            </tr>
+            <td bgcolor="#003000" class="bodystyle">+ oprava &quot;fatal BlowBack&quot; při přepnutí kamery </td>
+            </table></td></tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ zprovoznění podmínek TimeOfDay() a Penalty() pro světelný kužel </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ oprava zamrzání MSTS při pohledu kamery 4 </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ snížení polohy čísel vozů pro F7 </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ oprava protahování spřáhel a kmitání vozů při reverzu </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ oprava vyhodnocování adheze </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ samostatné knihovny pro RAILDRIVER </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ nové ukazatele dokabiny, <br>
+                SPEEDLIMIT DIAL - ukazetel momentální traťové rychlosti<br>
+                SPEED_PROJECTED DIAL - ukazatel okamžité cílové rychlosti<br>
+                DOORS_DISPLAY MULTI_STATE_DISPLAY - signalizace dveří </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ nezávislé, plně funkční 2 sběrače </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ zcela přepracovaný systém vyhodnocování polohy vozů (změna vzdálenosti mezi vozy za jízdy) </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ oprava &quot;sound Discrete_Trigger (18) - přímočinná brzda&quot; </td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ zvukové triggery pro pomocné loko v konzistu </td>
+            </tr>
+            
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ počet použitelných světel na 512 na čtverec;</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle"> + noční textury na anim objektech</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ oprava padání AE při zvětšování a posouvání</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle"> + oprava plnění vzduchových zásobníků</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ oprava vypínání napájení po stažení sběrače</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ Odpojení výkonu na pomocných EL po stažení sběrače</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle"> + sledování celého vlaku kamerou 4</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">+ Nová rozšířená diagnostika stab brzd pro celý vlak</td>
+            </tr>
+          </table>
+<br>
+          <br>
+          <table width="100%" border="0" cellspacing="1" cellpadding="1">
+            <tr>
+              <td width="672" align="center" class="subtitle"><br>
+                V příští verzi</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">&nbsp;</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">&nbsp;</td>
+            </tr>
+            <tr>
+              <td bgcolor="#003000" class="bodystyle">&nbsp;</td>
+            </tr>            
+          </table>
+<br>
+          <br>
+          <div align="center"> <span class="bodystyle">Rozpracovanost nové verze </span> </div>
+        <table width="182" border="1" align="center" cellpadding="3" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000' class="bodystyle" rules="rows">
+            <tr>
+              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr bordercolor="#008000" bordercolorlight="#008000" bordercolordark="#002000" class="bodystyle">
+                    <td align="left" width="0%">&nbsp;</td>
+                    <td width="0%" align="left" background="../images/progress.gif">&nbsp;</td>
+                    <td align="left" width="100%">&nbsp;</td>
+                </tr>
+              </table></td>
+            </tr>
+        </table>
+    
+  
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td colspan="2" bgcolor='#003000' class="bodystyle"><div align="justify">
+            <p>23.7.06<br>
+              Nejen pro skinaře.<br>
+              V sekci Tipy jsem doplnil <font color="#FFFF00">s laskavou pomocí p. Alana Butschka</font> (zarytý fanda železnice a významná osobnost ČD) význam a umístění značek a popisů zatím na elektrických skříňových lokomotivách. Všechny popisy a značky jsou udělány ve Photoshopu, jsou v měřítku a jsou editovatelné a ke stažení ve formátu .psd i s Alpha maskou. <br>
+              Postupně hodlám doplnit další tažné i vložené vozy a vozy nákladní. Tím bych chtěl doplnit mezeru v informacích, které jsem nikde jinde na webu nenašel v ucelené podobě. </p>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td colspan="2" bgcolor='#003000' class="bodystyle"><div align="justify">4.10.06<br>
+                    <div align="center"><span class="subtitle"><font color="#00FF00">V &quot;Galerie&quot; sekci najdete několik ukázek z nových funkcí</font></span></div>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td colspan="2" bgcolor='#003000' class="bodystyle"><div align="justify">
+            <p>14.11.06<br>
+              Z adresy <a href="http://perso.orange.fr/convoi/telechargements/telechargements.htm" target="_blank"><font color="#FFFF00">http://perso.orange.fr/convoi/telechargements/telechargements.htm</font></a> si můžete stáhnout skvělý program CONVOI. od 13.11 je zde nejnovější verze. Už tak velmi dobrý program pro vytváření souprav pro MSTS byl doplněn CabinPatcherem pro verzi MSTSBin 1.6.1022. Hromadně odstraňuje pozůstatky verze 1.5.7 v souborech *.eng a umožňuje rovněž hromadně vytvářet _rv kabiny. Kromě grafického prostředí shodného s MSTS Consist Editorem má řadu dalších povedených funkcí.<br>
+              - umí prohlížet 3D modely vozů podobně jako sView<br>
+              - kontroluje integritu consistů, wag a eng souborů<br>
+              - umí provést opravy nejběžnějších chyb závorek, úvozovek a názvů souborů<br>
+              - umí opravit sms soubory<br>
+              - přímo z programu můžete vytvářet 3D fotografie modelů a jejich popisy<br>
+              - vynikající a velmi rychlé vyhledávací funkce, podle trati, podle servisů, podle typů ...<br>
+              - vyhledání duplicitních, chybných, poškozených nebo chybějících souborů ...<br>
+              - zálohování všech změn<br>
+              - a řada dalších<br>
+              Obsahuje dále jednoduchý textový editor se zvýrazněním syntaxe pro MSTS, s kontrolou závorek a formátováním textu jako skvělou náhradu za Wordpad. <br>
+              Přeložil jsem tento program a nabízím ke stažení češtinu, a jako bonus úplný balík cca 1200 obrázků vozů z česko-slovenského Trainsetu (obsah se shoduje s Trainsetem p.Šemory). Stáhovat můžete zde: <a href="../data/CONVOI_CZ.exe"><font color="#FFFF00">http://mstsbin.uktrainsim.com/data/CONVOI_CZ.exe</font></a> . Spusťte soubor a rozbalte jeho obsah do adresáře programu CONVOI. V nastaveních na poslední záložce vyberte jazyk &quot;Czech&quot; </p>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><span class="bodystyle">13.3.07<br>
+        </span>
+          <table width="100%" border="0" cellspacing="5" cellpadding="2">
+            <tr>
+              <td bgcolor='#003000' class="bodystyle">V galerii ukázka nové funkce sběračů </td>
+            </tr>
+        </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><span class="bodystyle">14.3.07<br>
+        </span>
+          <table width="100%" border="0" cellspacing="5" cellpadding="2">
+            <tr>
+              <td bgcolor='#003000' class="bodystyle">Zvuky pro helper loko <br>
+                V galerii najdete malou ukázku </td>
+            </tr>
+        </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><span class="bodystyle">21.3.07<br>
+        </span>
+          <table width="100%" border="0" cellspacing="5" cellpadding="2">
+            <tr>
+              <td bgcolor='#003000' class="bodystyle">Indikace traťové rychlosti <br>
+                V galerii najdete malou ukázku </td>
+            </tr>
+        </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><span class="bodystyle">6.5.07<br>
+        </span>
+          <table width="100%" border="0" cellspacing="5" cellpadding="2">
+            <tr>
+              <td colspan="3" bgcolor='#003000' class="bodystyle">Nové screens a widgets jsou ke stažení </td>
+            </tr>
+            <tr align="center">
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/0.jpg" width="200" height="150"></td>
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/1.jpg" width="200" height="150"></td>
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/2.jpg" width="200" height="150"></td>
+            </tr>
+            <tr align="center">
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/3.jpg" width="200" height="150"></td>
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/4.jpg" width="200" height="150"></td>
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/5.jpg" width="200" height="150"></td>
+            </tr>
+            <tr align="center">
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/6.jpg" width="200" height="150"></td>
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/7.jpg" width="200" height="150"></td>
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/8.jpg" width="200" height="150"></td>
+            </tr>
+            <tr align="center">
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/9.jpg" width="200" height="150"></td>
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/10.jpg" width="200" height="150"></td>
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/11.jpg" width="200" height="150"></td>
+            </tr>
+            <tr align="center">
+              <td bgcolor='#003000' class="bodystyle"><img src="../images/widgets/12.jpg" width="200" height="150"></td>
+              <td bgcolor='#003000' class="bodystyle"><p><img src="../images/widgets/13.jpg" width="200" height="150"></p></td>
+              <td bgcolor='#003000' class="bodystyle"><p>U všech použitých fotografií<br>
+                budou uvedeni autoři:</p>
+                  <p>Pokud máte námitky proti<br>
+                    jejich uvedení, kontaktujte<br>
+                    autora Binu. </p></td>
+            </tr>
+        </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><span class="bodystyle">31.5.07<br>
+        </span>
+          <table width="100%" border="0" cellspacing="5" cellpadding="2">
+            <tr>
+              <td bgcolor='#003000' class="bodystyle">Přidána nová sekce - &quot;Technické specifikace&quot;. Pouze pro odborníky.</td>
+            </tr>
+        </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><span class="bodystyle">8.6.07<br>
+        </span>
+          <table width="100%" border="0" cellspacing="5" cellpadding="2">
+            <tr>
+              <td bgcolor='#003000' class="bodystyle">Další grafy v sekci - &quot;Technické specifikace&quot;.</td>
+            </tr>
+        </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><span class="bodystyle">5.8.07<br>
+        </span>
+          <table width="100%" border="0" cellspacing="5" cellpadding="2">
+            <tr>
+              <td bgcolor='#003000' class="bodystyle">Nová verze - počet použitelných světel na 512 na čtverec; den-noc bug; noční textury na anim objektech; přenos návěsti na stojící loko</td>
+            </tr>
+        </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><span class="bodystyle">15.9.07<br>
+        </span>
+          <table width="100%" border="0" cellspacing="5" cellpadding="2">
+            <tr>
+              <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/Scrgrb5.jpg" width="400" height="300"></td>
+              <td align="center" bgcolor='#003000' class="bodystyle"><img src="../images/Scrgrb6.jpg" width="400" height="300"></td>
+            </tr>
+        </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><span class="bodystyle">23.10.07<br>
+        </span>
+          <table width="100%" border="0" cellspacing="5" cellpadding="2">
+            <tr>
+              <td bgcolor='#003000' class="bodystyle">Nová verze - opravena indikace traťové rychlosti</td>
+            </tr>
+        </table></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</div>
+</body>
+</html>

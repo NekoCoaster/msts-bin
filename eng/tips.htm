@@ -1,0 +1,138 @@
+<%@LANGUAGE="JAVASCRIPT"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="Keywords" content="train, simulator, MSTS, Patch, vlak, simulátor, MS, Kuju, update, upgrade">
+<title>MSTS Bin - tips, cheats</title>
+<link href="../main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:500px;
+	overflow:auto;
+	z-index:1;
+}
+body {
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style3 {color: #00FF00}
+-->
+</style>
+</head>
+<body>
+<div id="Layer1">
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="center" bgcolor='#002000'><span class="bodystyle"><span class="subtitle">Tips and cheats </span></span></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr>
+          <td align="left" bgcolor='#003000'><p class="bodystyle"> Some tips and cheats that you maybe don't know. Some hidden or undocumented setings and parameters,which has had serve maybe only programmers.<br>
+          </p></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br>
+  <table width="90%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor='#008000' bordercolorlight='#008000' bordercolordark='#002000'>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="5" cellpadding="2">
+        <tr bgcolor='#002000'>
+          <td width="21%" align="center" class="bodystyle">parametrr</td>
+          <td width="79%" align="center" class="bodystyle">comment</td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">train.exe - perflog </td>
+          <td align="left" bgcolor='#003000' class="bodystyle">MSTS with this parameter make text protocol containing very usefull informations about FPS, number of loaded objects and polys, location of trains a many more. Created file is in  &quot;perflog.csv&quot; you could find i MSTS root folder. It is useable for graph generating in MS Excel perhaps. </td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">train.exe -brick </td>
+          <td align="left" bgcolor='#003000' class="bodystyle"><p>Instead of consist in your activity is to trails placed handcar (draisine) and you are able operate it by keyboard.:<br>
+            &quot;,&quot; and &quot;.&quot; move car to next left or right rail <br>
+            &quot;/&quot; switched travel direction <br>
+            &quot;;&quot; and &quot; ' &quot; take  control of speed.<br>
+            Be carefully! In this case is defined only one camera. Any attempt to swich cameras will hang MSTS. <br>
+          </p></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">App.fbk<br>
+            shaders config bug</td>
+          <td align="left" bgcolor='#003000' class="bodystyle">In config file App.fbk in root of MSTS is wrong nomber of shaders. It causes incorrect displaying of glossy textures of cars (some of wags are displayed like in day or texture blink). Find string <br>
+                <br>
+                <font color="#0033FF">shader_cfgs</font> (<br>
+                <span class="style3">22</span><br>
+            shader_cfg &quot;ShaderCfg-Alpha-Smoke&quot; (. . . . . <br>
+            <br>
+            and correct the number of shaders to <span class="style3">23</span> <br>
+            <br>
+            (source:<a href="http://steam4me.railpage.org.au/trainsim/index.html" target="_blank"> steam4me.railpage.org.au)</a></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">&quot;Monitors&quot; setup </td>
+          <td align="left" bgcolor='#003000' class="bodystyle">Some users contact me with tasks to improve monitors in locos. But thera are some possibilities in eng files of locos. Below this is list of conditions and events for each monitor in loco.<br>
+                <br>
+            VigilanceMonitor (<br>
+            MonitoringDeviceMonitorTimeLimit ( 10 )<br>
+            MonitoringDeviceAlarmTimeLimit ( 5 )<br>
+            MonitoringDevicePenaltyTimeLimit ( 5 )<br>
+            MonitoringDeviceCriticalLevel ( 5 )<br>
+            MonitoringDeviceResetLevel ( 5 )<br>
+            MonitoringDeviceAppliesFullBrake ( 1 )<br>
+            MonitoringDeviceAppliesEmergencyBrake ( 1 )<br>
+            MonitoringDeviceAppliesCutsPower ( 1 )<br>
+            MonitoringDeviceAppliesShutsDownEngine ( 1 )<br>
+            MonitoringDeviceAlarmTimeBeforeOverSpeed ( 30 )<br>
+            MonitoringDeviceDoesSuppressionReset ( 1 )<br>
+            MonitoringDeviceTriggerOnHighCurrent ( 2000 )<br>
+            MonitoringDeviceTriggerOnLowMainResPressire ( 110 )<br>
+            MonitoringDeviceTriggerOnOverRPM ( 1200 )<br>
+            MonitoringDeviceTriggerOnOverspeed ( 250 )<br>
+            MonitoringDeviceTriggerOnTrackOverspeed ( 1 )<br>
+            MonitoringDeviceTriggerOnTrackOverspeedMargin ( 1 )<br>
+            MonitoringDeviceResetOnBrakeFullyOn ( 0 )<br>
+            MonitoringDeviceResetOnBrakeOff ( 0 )<br>
+            MonitoringDeviceResetOnDirectionNeutral ( 1 )<br>
+            MonitoringDeviceResetOnDynamicBrakeOff ( 0 )<br>
+            MonitoringDeviceResetOnDynamicBrakeOn ( 0 )<br>
+            MonitoringDeviceResetOnEngineAtIdle ( 0 )<br>
+            MonitoringDeviceResetOnResetButton ( 1 )<br>
+            MonitoringDeviceResetOnZeroSpeed ( 0 )<br>
+            MonitoringDeviceResetOnZeroThrottle ( 0 )<br>
+            )<br>
+            <br>
+            Meaning of eache is obvious. Using of all of those together is not meaningful, it is only list of features. 0 - it is ignored, 1 - it is evaluated.<br>
+            There is a one another, bell trigger reset Vigilance monitor, but it is a bug and should be repaired in future. </td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">Folders in EngMexx </td>
+          <td align="left" bgcolor='#003000' class="bodystyle">Don't use simple slash &quot;/&quot; for relative path definition, EngMexx dont like it. Use syntax with double backslash like example:<br>
+            CabView ( &quot;..\\..\\common.cab\\cd460\\cd460.cvf&quot; ) Don't forget quotes for non DOS strings. </td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor='#003000' class="bodystyle">Eng / Wag Manual </td>
+          <td align="left" bgcolor='#003000' class="bodystyle">I found very important eng_wag Manual by Rudolf Richter a Joe Realmuto <br>
+            Manual is in english language.<br>
+            Download: <a href="../data/Eng_Wag_Manual%202.0e.zip"><font color="#FFFF00">Eng_Wag_Manual 2.0e.zip</font></a></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
