@@ -9,40 +9,41 @@
     <title>Msts Bin - download</title>
     <link href="../main.css" rel="stylesheet" type="text/css">
     <script type="text/javascript">
-      <!--
+
       function MM_findObj(n, d) { //v4.01
-        var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-          d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-        if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-        for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-        if(!x && d.getElementById) x=d.getElementById(n); return x;
+        var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+          d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+        }
+        if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+        for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+        if (!x && d.getElementById) x = d.getElementById(n); return x;
       }
-      
-      function MM_changeProp(objName,x,theProp,theValue) { //v6.0
+
+      function MM_changeProp(objName, x, theProp, theValue) { //v6.0
         var obj = MM_findObj(objName);
-        if (obj && (theProp.indexOf("style.")==-1 || obj.style)){
+        if (obj && (theProp.indexOf("style.") == -1 || obj.style)) {
           if (theValue == true || theValue == false)
-            eval("obj."+theProp+"="+theValue);
-          else eval("obj."+theProp+"='"+theValue+"'");
+            eval("obj." + theProp + "=" + theValue);
+          else eval("obj." + theProp + "='" + theValue + "'");
         }
       }
-      
+
       function MM_showHideLayers() { //v6.0
-        var i,p,v,obj,args=MM_showHideLayers.arguments;
-        for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
-          if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-          obj.visibility=v; }
+        var i, p, v, obj, args = MM_showHideLayers.arguments;
+        for (i = 0; i < (args.length - 2); i += 3) if ((obj = MM_findObj(args[i])) != null) {
+          v = args[i + 2];
+          if (obj.style) { obj = obj.style; v = (v == 'show') ? 'visible' : (v == 'hide') ? 'hidden' : v; }
+          obj.visibility = v;
+        }
       }
-      //-->
     </script>
     <style type="text/css">
-      <!--
       #Layer1 {
         position: absolute;
         left: 0px;
         top: 0px;
         width: 100%;
-        height: auto;
+        height: 100%;
         overflow: auto;
         z-index: 1;
       }
@@ -67,7 +68,6 @@
       .style2 {
         font-size: 12px
       }
-      -->
     </style>
   </head>
 
@@ -94,34 +94,33 @@
           <td>
             <table width="100%" border="0" cellspacing="5" cellpadding="2">
               <tr bgcolor='#002000'>
-                <td align="center" class="subtitle">Licen�n� ujedn�n� </td>
+                <td align="center" class="subtitle">Licenční ujednání</td>
               </tr>
               <tr>
                 <td align="left" bgcolor='#003000' class="bodystyle">
-                  <div align="justify">Software je ���en tak jak je, bez z�ruky. Autor nebere odpov�dnost za jakoukoliv
-                    �jmu spojenou s pou�it�m software. U�ivatel bere na v�dom� a porozum�l zm�n�m vlastnost� a chov�n�
-                    hry pro kterou je software ur�en a kter� jsou pops�ny v pr�vodn� dokumentaci.
-                    Pr�vodn� dokumentace je ned�lnou sou��sti distribuce.</div>
+                  <div align="justify">Software je šířen tak jak je, bez záruky. Autor nebere odpovědnost za jakoukoliv
+                    újmu spojenou s použitím software. Uživatel bere na vědomí a porozuměl změnám vlastností a chování
+                    hry pro kterou je software určen a které jsou popsány v průvodní dokumentaci. Průvodní dokumentace
+                    je nedílnou součásti distribuce.</div>
                 </td>
               </tr>
               <tr>
                 <td align="left" bgcolor='#003000' class="bodystyle">
-                  <div align="justify">U�ivatel� se zavazuj� ne���it software cestami a zdroji neodsouhlasen�mi autorem.
-                    Nen� povoleno prov�d�t �pravy softvare, zejm�na vyjmout informace o licen�n�m ujedn�n� nebo
-                    autorstv�.
-                    Licen�n� ujedn�n� je ned�lnou sou��st� distribuce. </div>
+                  <div align="justify">Uživatelé se zavazují nešířit software cestami a zdroji neodsouhlasenými autorem.
+                    Není povoleno provádět úpravy softvare, zejména vyjmout informace o licenčním ujednání nebo
+                    autorství. Licenční ujednání je nedílnou součástí distribuce.</div>
                 </td>
               </tr>
               <tr>
                 <td align="left" bgcolor='#003000' class="bodystyle">
-                  <div align="justify">Software sm� b�t pou�it pouze pro osobn� pot�ebu a pouze pro zm�nu funkce leg�ln�
-                    nabyt� hry pro kterou je ur�en. </div>
+                  <div align="justify">Software smí být použit pouze pro osobní potřebu a pouze pro změnu funkce legálně
+                    nabyté hry pro kterou je určen. </div>
                 </td>
               </tr>
               <tr>
                 <td align="left" bgcolor='#003000' class="bodystyle">
-                  <div align="justify">Software nesm� b�t bez v�dom� autora sou��st� jin� distribuce hry nebo jejich
-                    dopl�k�. Nesm� b�t pou�it pro komer�n� ��ely nebo z�sk�n� jak�hokoliv neopr�vn�n�ho prosp�chu.</div>
+                  <div align="justify">Software nesmí být bez vědomí autora součástí jiné distribuce hry nebo jejich
+                    doplňků. Nesmí být použit pro komerční účely nebo získání jakáhokoliv neoprávněného prospěchu.</div>
                 </td>
               </tr>
             </table>
@@ -135,8 +134,8 @@
           <td>
             <table width="100%" border="0" cellspacing="5" cellpadding="2">
               <tr bgcolor='#002000'>
-                <td align="center" bgcolor="#FF0000" class="bodystyle">Bude li zji�t�no, �e software je ���en nebo
-                  pou��v�n v rozporu s licen�n�m ujedn�n�m, bude projekt zastaven. </td>
+                <td align="center" bgcolor="#FF0000" class="bodystyle">Bude li zjištěno, že software je šířen nebo
+                  používán v rozporu s licenčním ujednáním, bude projekt zastaven. </td>
               </tr>
             </table>
           </td>
@@ -149,20 +148,20 @@
           <td>
             <table width="100%" border="0" cellspacing="5" cellpadding="2">
               <tr>
-                <td align="center" bgcolor='#002000' class="bodystyle">P�eji u�ivatel�m hodn� z�bavy s MSTS.</td>
+                <td align="center" bgcolor='#002000' class="bodystyle">Přeji uživatelům hodně zábavy s MSTS.</td>
               </tr>
               <tr>
                 <td align="left" bgcolor='#002000' class="bodystyle">
-                  <div align="justify">T�mto pochopiteln� d�kuji v�em, kte�� se radou, pomoc� nebo u�ite�n�mi
-                    informacemi na tomto projektu pod�lej�. Bez nich by, jak bylo uvedeno v z�hlav� projektu, tento
+                  <div align="justify">Tímto pochopitelně děkuji všem, kteří se radou, pomocí nebo užitečnými
+                    informacemi na tomto projektu podílejí. Bez nich by, jak bylo uvedeno v záhlaví projektu, tento
                     projekt nemohl vzniknout. </div>
                 </td>
               </tr>
               <tr>
                 <td align="left" bgcolor='#003000' class="bodystyle">
-                  <div align="justify">M�te li pocit, �e m�te k projektu co ��ci, �i chcete li na projektu spolupracovat
-                    a m�te schopnosti �i v�domosti, kter� by byly u�ite�n�, zanechte vzkaz v &quot;knize n�v�t�v&quot;,
-                    kontaktujte autora nebo diskuzn� f�ra. Odkazy najdete na str�nce &quot;link�&quot;. </div>
+                  <div align="justify">Máte li pocit, že máte k projektu co říci, či chcete li na projektu spolupracovat
+                    a máte schopnosti či vědomosti, které by byly užitečné, zanechte vzkaz v "knize návštěv",
+                    kontaktujte autora nebo diskuzní fóra. Odkazy najdete na stránce "linků".</div>
                 </td>
               </tr>
             </table>
@@ -180,103 +179,103 @@
               </tr>
               <tr>
                 <td width="10%" align="center" bgcolor='#003000' class="bodystyle">1.5.1</td>
-                <td width="76%" align="left" bgcolor='#003000' class="bodystyle">�e�� p�ep�n�n� denn� a no�n� kabiny
-                  b�hem hry v z�vislosti na osv�tlen�. </td>
+                <td width="76%" align="left" bgcolor='#003000' class="bodystyle">Řeší přepínání denní a noční kabiny
+                  během hry v závislosti na osvětlení.</td>
                 <td width="14%" align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.5.2</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Tot� - upravena spr�va pam�ti </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Totéž - upravena správa paměti</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.5.3</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">P�ep�n�n� ��d�c�ho stanovi�t� lokomotivy v�etn�
-                  definice pohled� vlevo a vpravo - opravena chyba v p�ep�n�n� textur </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Přepínání řídícího stanoviště lokomotivy včetně
+                  definice pohledů vlevo a vpravo - opravena chyba v přepínání textur</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.5.4</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">P�ep�n�n� sv�tel a sv�teln�ho ku�ele se zm�nou
-                  ��d�c�ho stanovi�t� </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Přepínání světel a světelného kužele se změnou
+                  řídícího stanoviště</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.5.5</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">P�ep�n�n� kabin pro lokomotivn� vlaky, dopln�n�
-                  sv�tel </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Přepínání kabin pro lokomotivní vlaky, doplnění
+                  světel</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.5.7</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">�pravy extern�ch kamer, zru�en� p�epnut� extern�ch
-                  kamer v tunelu, vylep�en� alerteru </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Úpravy externích kamer, zrušení přepnutí externích
+                  kamer v tunelu, vylepšení alerteru</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.6.0910</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Pln� p�ep�n�n� kabin a lokomotiv v konzistu, opravy
-                  n�kter�ch nedostatk� </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Plné přepínání kabin a lokomotiv v konzistu, opravy
+                  některých nedostatků</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.6.0922</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Oprava nekompatibility OS </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Oprava nekompatibility OS</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.6.1022</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Nez�visl� ovl�d�n� otev�r�n� dve�� a animace
-                  zrc�tek, �ada oprav a drobn�ch vylep�en� </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Nezávislé ovládání otevírání dveří a animace
+                  zrcátek, řada oprav a drobných vylepšení</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.6.1223</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Zlep�en� FPS, spr�va pam�ti, �ada oprav a
-                  vylep�en�, mizen� ter�nu p�i p�echodu p�es poledn�ky a rovnob�ky </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Zlepšení FPS, správa paměti, řada oprav a
+                  vylepšení, mizení terénu při přechodu přes poledníky a rovnoběžky</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.6.1230</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Oprava &quot;emergency&quot; brzd, podm�nek sv�tel,
-                  �prava spr�vy pam�ti </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Oprava "emergency" brzd, podmínek světel, úprava
+                  správy paměti</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.7.0103</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Oprava sv�tel, viditelnosti v RE </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Oprava světel, viditelnosti v RE</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.7.0211</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Oprava kmit�n� voz� a zamrz�n� p�i p�ep�n�n�
-                  kamery, opravy n�kter�ch chyb </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Oprava kmitání vozů a zamrzání při přepínání
+                  kamery, opravy některých chyb</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.7.0221</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Oprava sv�tel u lost consist� </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Oprava světel u lost consistů</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.7.0224</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Oprava zamrz�n� MSTS po nahr�n� ulo�en� aktivity
-                  p�i pou�it� n�kter�ch ovl�dac�ch kl�ves </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Oprava zamrzání MSTS po nahrání uložené aktivity
+                  při použití některých ovládacích kláves</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.7.0505</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Ovl�d�n� dvou sb�ra�� </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Ovládání dvou sběračů</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.7.051922</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Stabiln� verze</td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Stabilní verze</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.7.071320</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">&quot;spla�en� kola&quot; u AI parn�ch loko</td>
+                <td align="left" bgcolor='#003000' class="bodystyle">"splašená kola" u AI parních loko</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">
                   <div class="subtitle" id="div12"><a href="../data/Patch%201.7.071320.exe" target="_blanc">DOWNLOAD</a>
                   </div>
@@ -284,8 +283,8 @@
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.7.072421</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">zvy�uje po�et pou�iteln�ch sv�tel na 400 na �tverec
-                  - &quot;��dn� mrtv� n�v�stidla&quot;</td>
+                <td align="left" bgcolor='#003000' class="bodystyle">zvyšuje počet použitelných světel na 400 na čtverec
+                  - "žádná mrtvá návěstidla"</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">
                   <div class="subtitle" id="div13"><a href="../data/Patch%201.7.072421.exe" target="_blanc">DOWNLOAD</a>
                   </div>
@@ -295,8 +294,8 @@
                 <td align="center" bgcolor='#003000' class="bodystyle">
                   <p>1.7.081214</p>
                 </td>
-                <td align="left" bgcolor='#003000' class="bodystyle">po�et pou�iteln�ch sv�tel na 512 na �tverec;
-                  den-noc bug; no�n� textury na anim objektech; p�enos n�v�sti na stoj�c� loko</td>
+                <td align="left" bgcolor='#003000' class="bodystyle">počet použitelných světel na 512 na čtverec;
+                  den-noc bug; noční textury na anim objektech; přenos návěsti na stojící loko</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">
                   <div class="subtitle" id="div11"><a href="../data/Patch%201.7.081214.exe" target="_blanc">DOWNLOAD</a>
                   </div>
@@ -304,8 +303,8 @@
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.7.081920</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Oprava RE pro eventy, oprava odpojen� nap�jen� po
-                  sta�en� sb�ra�e</td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Oprava RE pro eventy, oprava odpojení napájení po
+                  stažení sběrače</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">
                   <div class="subtitle" id="div10"><a href="../data/Patch%201.7.081920.exe" target="_blanc">DOWNLOAD</a>
                   </div>
@@ -315,8 +314,8 @@
                 <td align="center" bgcolor='#003000' class="bodystyle">
                   <p>1.7.092915</p>
                 </td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Prodlou�en� intervalu pro kameru 4, odpojen�
-                  nap�jen� na pom. loko, n�kter� �pravy </td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Prodloužení intervalu pro kameru 4, odpojení
+                  napájení na pom. loko, některé úpravy</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">
                   <div class="subtitle" id="div9"><a href="../data/Patch%201.7.092915.exe" target="_blanc">DOWNLOAD</a>
                   </div>
@@ -324,7 +323,7 @@
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.7.102222</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Opravena chyba v indikaci omezen� tra�ov� rychlosti
+                <td align="left" bgcolor='#003000' class="bodystyle">Opravena chyba v indikaci omezení traťové rychlosti
                 </td>
                 <td align="left" bgcolor='#003000' class="bodystyle">
                   <div class="subtitle" id="div8"><a href="../data/Patch%201.7.102222.exe" target="_blanc">DOWNLOAD</a>
@@ -333,9 +332,9 @@
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.8.010516</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Opravena chyba v indikaci omezen� tra�ov�
-                  rychlosti, implementace zabezpe�ova�e LS90, o�et�en� p�du na parn� loko p�i otev�en� v�lc� a
-                  sou�asn�ho zvonu.</td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Opravena chyba v indikaci omezení traťové
+                  rychlosti, implementace zabezpečovače LS90, ošetření pádu na parní loko při otevření válců a
+                  současného zvonu.</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">
                   <div class="subtitle" id="div6">
                     <p><a href="../data/Patch%201.8.010516cz.exe" target="_blanc">DOWNLOAD</a> <span
@@ -347,16 +346,16 @@
               </tr>
               <tr>
                 <td align="center" bgcolor='#003000' class="bodystyle">1.8.052113</td>
-                <td align="left" bgcolor='#003000' class="bodystyle">Oprava v�po�t� p�i v�azen�ch el. motorov�ch vozech,
-                  oprava chyby ve v�cepolohov�ch ovlada��ch sb�ra��.</td>
+                <td align="left" bgcolor='#003000' class="bodystyle">Oprava výpočtů při vřazených el. motorových vozech,
+                  oprava chyby ve vícepolohových ovladačích sběračů.</td>
                 <td align="left" bgcolor='#003000' class="bodystyle">&nbsp;</td>
               </tr>
               <tr>
                 <td colspan="3" align="center" bgcolor='#FFFF00' class="bodystyle">
                   <p>
-                    <font color="#000000">Verze jsou kumulativn� ( ka�d� nov�j�� obsahuje v�echny p�edchoz� zm�ny)<br>
-                      p�ed instalac� nov� verze starou podle n�vodu odinstalujte<br>
-                      Mus�te m�t nainstalov�n ofici�ln� MS Update Patch, kter� si m��ete st�hnout z adresy:<br>
+                    <font color="#000000">Verze jsou kumulativní ( každá novější obsahuje všechny předchozí změny)
+                      před instalací nové verze starou podle návodu odinstalujte
+                      Musíte mít nainstalován oficiální MS Update Patch, který si můžete stáhnout z adresy:<br>
                       <font color="#FF0000">
                         http://download.microsoft.com/download/TrainSimulator/Update/2.0/WIN98MeXP/EN-US/trainupdate.exe
                       </font><br>
@@ -380,18 +379,18 @@
               <tr>
                 <td colspan="2" bgcolor='#003000' class="bodystyle">
                   <div align="justify">
-                    <p>- P�es ve�kerou snahu se MSTS st�le u n�kter�ch trat� m��e chovat podivn� a nov� funkce nemus�
-                      fungovat tak, jak maj�.<br>
-                      - V MSTS je �ada z�kout�, kde by jin� program upozornil na chybu. Pro� tak MSTS ne�in� ji� bylo
-                      uvedeno, nechci d�le komentovat <br>
-                      - Berte pros�m tedy uv�d�n� verze st�le jako pracovn�. Odlad�n� verze ozna��m jako
-                      &quot;Final&quot; nebo &quot;Stabiln�&quot;. Sou�asn� nev�hejte a upozorn�te na jak�koliv probl�my
-                      spojen� s pou�it�m Patche. V�emi p�ipom�nkami se budu zab�vat. Jde n�m o to, aby byli spokojeni
-                      v�ichni a nen� v m�ch sil�ch, ani v sil�ch tester�, odzkou�et v�echny podm�nky. D�ky za pochopen�.
+                    <p>- Přes veškerou snahu se MSTS stále u některých tratí může chovat podivně a nové funkce nemusí
+                      fungovat tak, jak mají.<br>
+                      - V MSTS je řada zákoutí, kde by jiný program upozornil na chybu. Proč tak MSTS nečiní již bylo
+                      uvedeno, nechci dále komentovat<br>
+                      - Berte prosím tedy uváděné verze stále jako pracovní. Odladěné verze označím jako "Final" nebo
+                      "Stabilní". Současně neváhejte a upozorněte na jakékoliv problémy spojené s použitím Patche. Všemi
+                      připomínkami se budu zabývat. Jde nám o to, aby byli spokojeni všichni a není v mých silách, ani v
+                      silách testerů, odzkoušet všechny podmínky. Díky za pochopení.
                     </p>
                     <p><a href="../data/Readme.txt" target="_blank">
-                        <font style="font-weight:bold" color="#FF0000">Pros�m p�ed instalac� �t�te &quot;Manual&quot; a
-                          &quot;Readme.txt&quot;</font>
+                        <font style="font-weight:bold" color="#FF0000">Prosím před instalací čtěte "Manual" a
+                          "Readme.txt"</font>
                       </a></p>
                   </div>
                 </td>
@@ -407,7 +406,7 @@
           <td align="center">
             <table border="0" align="center" cellpadding="0" cellspacing="3">
               <tr>
-                <td width="200" align="center"><span class="bodystyle"> Stabiln�<br>
+                <td width="200" align="center"><span class="bodystyle">Stabilní<br>
                     verze
                     1.7.051922</span></td>
               </tr>
@@ -422,7 +421,7 @@
           <td align="center">
             <table border="0" align="center" cellpadding="0" cellspacing="3">
               <tr>
-                <td width="200" align="center"><span class="bodystyle"> Posledn� pracovn�<br>
+                <td width="200" align="center"><span class="bodystyle">Poslední pracovní<br>
                     verze
                     1.8.052113</span></td>
               </tr>
@@ -437,7 +436,7 @@
           <td align="center">
             <table border="0" align="center" cellpadding="0" cellspacing="3">
               <tr>
-                <td width="200" align="center"><span class="bodystyle">Nov�<br>
+                <td width="200" align="center"><span class="bodystyle">Nové<br>
                     Screens &amp; Widgets </span></td>
               </tr>
               <tr>
