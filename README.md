@@ -60,4 +60,6 @@ There are however, a few other things that I would like to implement in the futu
 
 However, as I am currently a student and have other commitments, I may not be able to work on this project as much as I would like to, but I will try my best to keep the website updated and maintained as needed during my free time.
 
-As always, if you have any suggestions, feedback, or if you've found any bugs or issues with the website, please feel free to open an issue on this repository, and I will try my best to address them as soon as possible.
+If you have any suggestions, feedback, or if you've found any bugs or issues with the website, please feel free to open an issue on this repository, and I will try my best to address them as soon as possible.
+
+On a side note I'm also currently looking for a way to host steam4me.net on GitHub Pages as well, as I've managed to archive that entire site too before it went down. However, due to the entire site (4GB in total including downloadable files) exceeding the 2GB limit of your typical GitHub repository, I'm currently looking into how feasible it would be to host the HTML files on GitHub Pages while having the downloadable files else where on a separate server, presumably a cloud storage provider with file download availability being the primary concern.
