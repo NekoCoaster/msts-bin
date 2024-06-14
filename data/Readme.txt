@@ -1,15 +1,15 @@
 Instalace
 
-1) Rozbalte archiv kamkoliv na váš pevnı disk
-2) Pokud máte nainstalovánu pøedchozí verzi Patche, odinstalujte ji, nebo pouijte èistou instalaci MSTS s originálním update ver 1.4 od MS
-   Po odinstalování musí bıt smazán adresáø "MSTSBIN_BACKUP", pokud není, vymate jej ruènì.
-3) Spustìte soubor Patch 1.7.050523.exe a øiïte se pokyny
-4) Pokud pouíváte RAILDRIVER pouijte dll knihovny z adresáøe "Rail Driver DLLs" 
+1) Rozbalte archiv kamkoliv na vÃ¡Å¡ pevnÃ½ disk
+2) Pokud mÃ¡te nainstalovÃ¡nu pÅ™edchozÃ­ verzi Patche, odinstalujte ji, nebo pouÅ¾ijte Äistou instalaci MSTS s originÃ¡lnÃ­m update ver 1.4 od MS
+   Po odinstalovÃ¡nÃ­ musÃ­ bÃ½t smazÃ¡n adresÃ¡Å™ "MSTSBIN_BACKUP", pokud nenÃ­, vymaÅ¾te jej ruÄnÄ›.
+3) SpustÄ›te soubor Patch 1.7.050523.exe a Å™iÄte se pokyny
+4) Pokud pouÅ¾Ã­vÃ¡te RAILDRIVER pouÅ¾ijte dll knihovny z adresÃ¡Å™e "Rail Driver DLLs" 
 
-Pokud chcete pouít nové‚ Screens a Widgets, nainstalujte nejprve Patch a teprve 
-poté‚ nové‚ Screeny.
-Screens instalátor nevytváøí zálohu, zálohujte si proto celı adresáø "GUI", 
-pokud chcete v budoucnu obnovit pùvodní nastavení.
+Pokud chcete pouÅ¾Ã­t novÃ©â€š Screens a Widgets, nainstalujte nejprve Patch a teprve 
+potÃ©â€š novÃ©â€š Screeny.
+Screens instalÃ¡tor nevytvÃ¡Å™Ã­ zÃ¡lohu, zÃ¡lohujte si proto celÃ½ adresÃ¡Å™ "GUI", 
+pokud chcete v budoucnu obnovit pÅ¯vodnÃ­ nastavenÃ­.
 *****************************************************************
 How to install
 
