@@ -23,13 +23,11 @@ To summarize, here are a few reasons why I've decided to host a web archive of t
 
 3. **Redundancy**: Having multiple copies of the same website hosted on different platforms would ensure that the website would be preserved even if one of the platforms were to go down. And with the recent news of the internet archive in hot legal waters with book publishers, the future of the Wayback Machine remains uncertain and bleak.
 
-4. **Search Engine Optimization**: As Internet Archive snapshots are not indexed by search engines, it can be difficult for users to find the archived website when searching for MSTSBin related content. By hosting the web archive on GitHub Pages, it would allow for the website to be indexed by search engines such as Google, Bing, DuckDuckGo, etc. which would make it easier for users to find the website when searching for MSTSBin related content.
+4. **Continuous updates**: As this version of the web archive is not a static snapshot, I would be able to continuously update the website with support for new languages, fixes, and other improvements as needed, which would not be possible with the Wayback Machine snapshots.
 
-5. **Continuous updates**: As this version of the web archive is not a static snapshot, I would be able to continuously update the website with support for new languages, fixes, and other improvements as needed, which would not be possible with the Wayback Machine snapshots.
+5. **Giving back to the community**: As a long time user of MSTSBin and a member of the Train Simulator community (Albeit a lurker), having the ability to not only preserve and host the original MSTSBin website itself and all of it's contents, but also to improve upon it has given me much joy and satisfaction, and I hope that this web archive would be of use to the community as well.
 
-6. **Giving back to the community**: As a long time user of MSTSBin and a member of the Train Simulator community (Albeit a lurker), having the ability to not only preserve and host the original MSTSBin website itself and all of it's contents, but also to improve upon it has given me much joy and satisfaction, and I hope that this web archive would be of use to the community as well.
-
-7. **I just wanted to**: It's that simple. <br> ![Yeah, I just want to.](/git_docs/kyaruface.png)
+6. **I just wanted to**: It's that simple.
 
 ## So what are the differences between this and the original website / snapshots?
 
